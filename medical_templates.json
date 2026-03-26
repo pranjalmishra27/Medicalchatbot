@@ -1,0 +1,405 @@
+{
+  "project_note": "Simple educational symptom templates for a lightweight chatbot. Not medical advice.",
+  "conditions": [
+    {
+      "name": "Common Cold",
+      "summary": "Sneezing, mild fever, runny nose, blocked nose, and sore throat can suggest a common cold.",
+      "keywords": ["cold", "cough", "runny", "nose", "sneezing", "sore", "throat", "mild", "fever"],
+      "basic_care": ["Rest well", "Drink warm fluids", "Sleep enough", "Use steam for blocked nose"],
+      "common_otc": ["Paracetamol if usually safe for you", "Saline nasal spray", "Simple throat lozenges"],
+      "seek_help_now": ["Breathing trouble", "Chest pain", "Confusion", "High fever for many days"]
+    },
+    {
+      "name": "Flu",
+      "summary": "Flu may cause fever, body pain, chills, cough, weakness, and sore throat.",
+      "keywords": ["flu", "influenza", "fever", "bodyache", "chills", "cough", "weakness", "throat"],
+      "basic_care": ["Rest at home", "Drink water and soup", "Take enough sleep", "Monitor fever"],
+      "common_otc": ["Paracetamol if safe for you", "ORS or fluids", "Simple cough support"],
+      "seek_help_now": ["Breathing difficulty", "Confusion", "Very high fever", "Blue lips"]
+    },
+    {
+      "name": "COVID-like Illness",
+      "summary": "Fever, cough, body pain, sore throat, smell loss, and weakness may fit a viral COVID-like illness.",
+      "keywords": ["covid", "corona", "fever", "cough", "smell", "taste", "weakness", "viral"],
+      "basic_care": ["Rest", "Stay hydrated", "Isolate if needed", "Monitor breathing"],
+      "common_otc": ["Paracetamol if safe", "ORS or fluids", "Saline gargles"],
+      "seek_help_now": ["Shortness of breath", "Low oxygen", "Chest pain", "Severe weakness"]
+    },
+    {
+      "name": "Sore Throat",
+      "summary": "Pain while swallowing, throat irritation, and mild fever may suggest a sore throat or throat infection.",
+      "keywords": ["sore", "throat", "swallow", "tonsil", "irritation", "fever"],
+      "basic_care": ["Warm salt-water gargles", "Drink warm liquids", "Rest voice", "Avoid smoke"],
+      "common_otc": ["Simple lozenges", "Paracetamol if safe", "Warm tea with honey if appropriate"],
+      "seek_help_now": ["Unable to swallow", "Breathing trouble", "Neck swelling", "High fever"]
+    },
+    {
+      "name": "Sinus Congestion",
+      "summary": "Blocked nose, facial pressure, headache, and thick nasal mucus can suggest sinus congestion.",
+      "keywords": ["sinus", "blocked", "nose", "facial", "pressure", "mucus", "headache"],
+      "basic_care": ["Steam inhalation", "Warm fluids", "Rest", "Saline rinse if suitable"],
+      "common_otc": ["Saline nasal spray", "Paracetamol if safe", "Simple cold relief"],
+      "seek_help_now": ["Eye swelling", "Severe facial pain", "Confusion", "High fever"]
+    },
+    {
+      "name": "Seasonal Allergy",
+      "summary": "Sneezing, itchy nose, watery eyes, and mild cough may suggest seasonal allergy.",
+      "keywords": ["allergy", "sneezing", "itchy", "watery", "eyes", "pollen", "dust"],
+      "basic_care": ["Avoid triggers", "Wash face", "Keep room clean", "Drink water"],
+      "common_otc": ["Common antihistamine if safe for you", "Saline rinse", "Lubricating eye drops if suitable"],
+      "seek_help_now": ["Breathing trouble", "Face swelling", "Severe dizziness", "Fast spreading rash"]
+    },
+    {
+      "name": "Mild Skin Rash",
+      "summary": "Itching, mild redness, or small bumps can fit a simple skin rash or irritation.",
+      "keywords": ["rash", "itching", "red", "skin", "bumps", "hives", "itchy"],
+      "basic_care": ["Keep skin cool", "Avoid scratching", "Use gentle soap", "Wear loose clothes"],
+      "common_otc": ["Calamine lotion", "Common antihistamine if safe", "Moisturizer"],
+      "seek_help_now": ["Face swelling", "Breathing trouble", "Rash with high fever", "Severe blistering"]
+    },
+    {
+      "name": "Acid Reflux / Gas",
+      "summary": "Burning chest, sour taste, bloating, and discomfort after food may suggest acidity or reflux.",
+      "keywords": ["acid", "gas", "reflux", "burning", "heartburn", "bloating", "sour"],
+      "basic_care": ["Eat small meals", "Avoid oily food", "Do not lie down after meals", "Drink water slowly"],
+      "common_otc": ["Simple antacid if safe for you", "Fluids", "Light food"],
+      "seek_help_now": ["Severe chest pain", "Vomiting blood", "Black stool", "Pain spreading to arm or jaw"]
+    },
+    {
+      "name": "Indigestion",
+      "summary": "Fullness, upper stomach discomfort, burping, and nausea after meals can suggest indigestion.",
+      "keywords": ["indigestion", "fullness", "burping", "nausea", "heavy", "upper", "stomach"],
+      "basic_care": ["Eat smaller meals", "Avoid spicy food", "Walk slowly after eating", "Drink water"],
+      "common_otc": ["Simple antacid if safe", "Light food", "Ginger tea if tolerated"],
+      "seek_help_now": ["Severe pain", "Vomiting blood", "Black stool", "Persistent vomiting"]
+    },
+    {
+      "name": "Constipation",
+      "summary": "Hard stool, straining, bloating, and fewer bowel movements may suggest constipation.",
+      "keywords": ["constipation", "hard", "stool", "straining", "bloating", "motion"],
+      "basic_care": ["Drink more water", "Eat fiber-rich food", "Walk daily", "Do not delay toilet urge"],
+      "common_otc": ["Fiber supplement if tolerated", "Warm fluids", "Simple stool softener only if already safe for you"],
+      "seek_help_now": ["Severe belly pain", "Vomiting", "Blood in stool", "No stool with swelling and pain"]
+    },
+    {
+      "name": "Loose Motion / Mild Gastroenteritis",
+      "summary": "Loose stool, stomach cramps, weakness, or vomiting can suggest a stomach infection or food issue.",
+      "keywords": ["diarrhea", "loose", "motion", "stomach", "cramp", "vomit", "infection"],
+      "basic_care": ["Take ORS", "Eat light food", "Rest", "Avoid oily outside food"],
+      "common_otc": ["ORS packets", "Simple probiotics if tolerated", "Light rice or banana diet"],
+      "seek_help_now": ["Blood in stool", "Very little urine", "High fever", "Severe weakness"]
+    },
+    {
+      "name": "Food Poisoning",
+      "summary": "Sudden vomiting, loose motion, stomach pain, and weakness after suspicious food can suggest food poisoning.",
+      "keywords": ["food", "poisoning", "vomiting", "loose", "restaurant", "stale", "stomach"],
+      "basic_care": ["ORS and water", "Rest", "Eat bland food", "Avoid milk and oily meals for a while"],
+      "common_otc": ["ORS packets", "Light diet", "Paracetamol for fever if safe"],
+      "seek_help_now": ["Blood in stool", "Fainting", "Strong dehydration", "High fever"]
+    },
+    {
+      "name": "Nausea",
+      "summary": "Feeling sick in the stomach with urge to vomit can come from indigestion, viral illness, or motion issues.",
+      "keywords": ["nausea", "queasy", "sick", "vomit", "vomiting"],
+      "basic_care": ["Sip water slowly", "Eat bland food", "Rest", "Avoid strong smells"],
+      "common_otc": ["ORS or fluids", "Ginger tea if tolerated", "Plain crackers or toast"],
+      "seek_help_now": ["Cannot keep fluids down", "Vomiting blood", "Severe headache", "Severe belly pain"]
+    },
+    {
+      "name": "Vomiting",
+      "summary": "Vomiting may happen with stomach infection, food poisoning, migraine, or viral illness.",
+      "keywords": ["vomiting", "vomit", "throwing", "retching", "nausea"],
+      "basic_care": ["Take small sips of water", "Use ORS", "Rest", "Avoid oily food"],
+      "common_otc": ["ORS packets", "Light bland diet", "Simple ginger support if tolerated"],
+      "seek_help_now": ["Vomiting blood", "Severe dehydration", "Confusion", "Severe stomach pain"]
+    },
+    {
+      "name": "Stomach Cramps",
+      "summary": "Cramping belly pain can happen with gas, indigestion, diarrhea, or mild stomach infection.",
+      "keywords": ["cramps", "stomach", "belly", "abdomen", "pain", "gas"],
+      "basic_care": ["Rest", "Warm compress", "Drink water", "Eat light meals"],
+      "common_otc": ["Simple antacid if gas-related and safe", "ORS if diarrhea is present", "Light diet"],
+      "seek_help_now": ["Severe pain", "Hard swollen belly", "Vomiting blood", "Blood in stool"]
+    },
+    {
+      "name": "Simple Headache",
+      "summary": "Stress, low sleep, dehydration, and viral illness may cause a common headache.",
+      "keywords": ["headache", "head", "pain", "stress", "sleep", "dehydration"],
+      "basic_care": ["Drink water", "Rest in a quiet room", "Reduce screen time", "Sleep properly"],
+      "common_otc": ["Paracetamol if safe for you", "Light food", "Enough fluids"],
+      "seek_help_now": ["Worst headache suddenly", "Weakness", "Fainting", "Vision loss"]
+    },
+    {
+      "name": "Migraine-like Headache",
+      "summary": "Throbbing headache with nausea, light sensitivity, or one-sided pain can suggest migraine-like symptoms.",
+      "keywords": ["migraine", "throbbing", "light", "sensitivity", "one-sided", "nausea"],
+      "basic_care": ["Rest in a dark quiet room", "Drink water", "Sleep if possible", "Avoid screen glare"],
+      "common_otc": ["Paracetamol if safe", "Light snacks", "Hydration"],
+      "seek_help_now": ["New weakness", "Speech trouble", "Fainting", "Worst sudden headache"]
+    },
+    {
+      "name": "Eye Strain",
+      "summary": "Long screen use can cause headache, dry eyes, blurred focus, and eye discomfort.",
+      "keywords": ["eye", "strain", "screen", "blur", "dry", "computer", "focus"],
+      "basic_care": ["Rest eyes", "Use the 20-20-20 rule", "Reduce screen brightness", "Blink often"],
+      "common_otc": ["Lubricating eye drops if suitable", "Paracetamol if safe", "Warm compress"],
+      "seek_help_now": ["Sudden vision loss", "Severe eye pain", "Headache with vomiting", "Eye injury"]
+    },
+    {
+      "name": "Conjunctivitis-like Irritation",
+      "summary": "Red eye, watering, itching, or mild sticky discharge may fit conjunctivitis-like irritation.",
+      "keywords": ["red", "eye", "watering", "itching", "sticky", "conjunctivitis", "pink"],
+      "basic_care": ["Keep hands clean", "Do not rub eyes", "Use a clean cloth", "Avoid sharing towels"],
+      "common_otc": ["Lubricating eye drops if suitable", "Cool compress", "Common antihistamine if allergy-related and safe"],
+      "seek_help_now": ["Severe eye pain", "Vision change", "Eye injury", "Light sensitivity with pain"]
+    },
+    {
+      "name": "Dry Eyes",
+      "summary": "Burning, gritty feeling, and mild blurred vision after screen use may suggest dry eyes.",
+      "keywords": ["dry", "eyes", "gritty", "burning", "screen", "blurred"],
+      "basic_care": ["Blink more", "Rest eyes", "Use humid air if possible", "Reduce fan directly on face"],
+      "common_otc": ["Lubricating eye drops if suitable", "Warm compress"],
+      "seek_help_now": ["Severe pain", "Vision loss", "Eye injury", "Red eye with strong light sensitivity"]
+    },
+    {
+      "name": "Earache",
+      "summary": "Ear pain, fullness, mild fever, or reduced hearing can suggest ear irritation or infection.",
+      "keywords": ["ear", "earache", "hearing", "fullness", "pain", "infection"],
+      "basic_care": ["Rest", "Keep ear dry", "Avoid inserting objects", "Warm compress outside ear"],
+      "common_otc": ["Paracetamol if safe", "Fluids", "Rest"],
+      "seek_help_now": ["Ear swelling", "High fever", "Severe pain", "Dizziness with vomiting"]
+    },
+    {
+      "name": "Dizziness",
+      "summary": "Dizziness may happen due to dehydration, low food intake, viral illness, or inner ear issues.",
+      "keywords": ["dizzy", "dizziness", "spinning", "vertigo", "lightheaded"],
+      "basic_care": ["Sit or lie down safely", "Drink water", "Eat light food", "Stand up slowly"],
+      "common_otc": ["ORS or fluids", "Light snacks"],
+      "seek_help_now": ["Fainting", "Chest pain", "Weakness on one side", "Speech trouble"]
+    },
+    {
+      "name": "Dehydration",
+      "summary": "Dry mouth, weakness, dark urine, and dizziness can suggest dehydration.",
+      "keywords": ["dehydration", "dry", "mouth", "dark", "urine", "weakness", "dizzy"],
+      "basic_care": ["Drink water slowly", "Take ORS", "Rest in a cool place", "Avoid heavy activity"],
+      "common_otc": ["ORS packets", "Coconut water if tolerated", "Light fluids"],
+      "seek_help_now": ["Confusion", "Very little urine", "Fainting", "Fast heartbeat with weakness"]
+    },
+    {
+      "name": "Low Blood Sugar-like Symptoms",
+      "summary": "Shaking, sweating, hunger, dizziness, and weakness may suggest low blood sugar-like symptoms.",
+      "keywords": ["low sugar", "shaking", "sweating", "hunger", "weakness", "dizzy"],
+      "basic_care": ["Take a quick sugar source if you are known to have low sugar episodes", "Sit safely", "Eat a small snack", "Monitor symptoms"],
+      "common_otc": ["Juice or glucose source", "Snack with carbs if suitable"],
+      "seek_help_now": ["Confusion", "Fainting", "Seizure", "Symptoms not improving quickly"]
+    },
+    {
+      "name": "Anxiety-like Symptoms",
+      "summary": "Worry, fast heartbeat, chest tightness, sweating, and restlessness can occur with anxiety-like episodes.",
+      "keywords": ["anxiety", "panic", "worry", "restless", "sweating", "heartbeat"],
+      "basic_care": ["Sit in a calm place", "Take slow breaths", "Sip water", "Reduce caffeine"],
+      "common_otc": ["No medicine suggestion here", "Hydration", "Relaxation support"],
+      "seek_help_now": ["Chest pain", "Fainting", "Self-harm thoughts", "Breathing trouble"]
+    },
+    {
+      "name": "Stress-related Poor Sleep",
+      "summary": "Difficulty sleeping, racing thoughts, and tiredness can suggest stress-related sleep problems.",
+      "keywords": ["insomnia", "sleep", "stress", "tired", "awake", "racing thoughts"],
+      "basic_care": ["Keep a regular sleep time", "Avoid late caffeine", "Reduce screen use before bed", "Use a calm room"],
+      "common_otc": ["No strong medicine suggestion", "Warm milk or tea if suitable", "Relaxation routine"],
+      "seek_help_now": ["Self-harm thoughts", "Confusion", "Severe behavior change", "Chest pain"]
+    },
+    {
+      "name": "Muscle Strain",
+      "summary": "Pain after lifting, exercise, or sudden movement may suggest a muscle strain.",
+      "keywords": ["muscle", "strain", "pull", "exercise", "lifting", "pain"],
+      "basic_care": ["Rest the area", "Use ice early if recent", "Gentle movement later", "Avoid heavy strain"],
+      "common_otc": ["Paracetamol if safe", "Simple topical pain gel if usually tolerated"],
+      "seek_help_now": ["Severe swelling", "Cannot move limb", "Deformity", "Numbness"]
+    },
+    {
+      "name": "Back Pain",
+      "summary": "Back pain after poor posture, lifting, or strain is common and often improves with rest and movement care.",
+      "keywords": ["back", "spine", "lower back", "lifting", "posture", "pain"],
+      "basic_care": ["Avoid heavy lifting", "Use gentle stretching", "Walk a little", "Use warm compress later"],
+      "common_otc": ["Paracetamol if safe", "Simple topical support"],
+      "seek_help_now": ["Loss of bladder control", "Leg weakness", "Severe injury", "Fever with back pain"]
+    },
+    {
+      "name": "Neck Pain",
+      "summary": "Neck stiffness or pain may happen from posture, sleep position, or mild muscle strain.",
+      "keywords": ["neck", "stiff", "posture", "sleep", "pain"],
+      "basic_care": ["Rest", "Gentle stretching", "Improve posture", "Warm compress"],
+      "common_otc": ["Paracetamol if safe", "Simple topical pain support"],
+      "seek_help_now": ["Severe injury", "Arm weakness", "High fever", "Severe headache with stiffness"]
+    },
+    {
+      "name": "Knee Pain",
+      "summary": "Knee pain can happen from strain, overuse, twist injury, or mild inflammation.",
+      "keywords": ["knee", "joint", "walking", "stairs", "pain", "swelling"],
+      "basic_care": ["Rest", "Ice if recent", "Avoid strain", "Elevate leg"],
+      "common_otc": ["Paracetamol if safe", "Simple support bandage if comfortable"],
+      "seek_help_now": ["Cannot bear weight", "Deformity", "High fever with swelling", "Severe injury"]
+    },
+    {
+      "name": "Ankle Sprain-like Injury",
+      "summary": "Pain and swelling after twisting the ankle may suggest a sprain-like injury.",
+      "keywords": ["ankle", "sprain", "twist", "swelling", "walking", "injury"],
+      "basic_care": ["Rest", "Ice", "Compression if comfortable", "Elevate"],
+      "common_otc": ["Paracetamol if safe", "Simple crepe bandage if suitable"],
+      "seek_help_now": ["Deformity", "Cannot walk at all", "Severe swelling", "Numbness"]
+    },
+    {
+      "name": "General Joint Pain",
+      "summary": "Mild joint aches can occur with overuse, viral illness, or simple inflammation.",
+      "keywords": ["joint", "ache", "arthritis", "pain", "stiffness"],
+      "basic_care": ["Rest", "Gentle movement", "Warm compress", "Hydration"],
+      "common_otc": ["Paracetamol if safe", "Simple topical support"],
+      "seek_help_now": ["Hot swollen joint", "High fever", "Cannot move joint", "Severe redness"]
+    },
+    {
+      "name": "Mild Fever",
+      "summary": "A mild fever can happen with viral infections, throat issues, stomach upset, or body inflammation.",
+      "keywords": ["fever", "temperature", "warm", "chills"],
+      "basic_care": ["Rest", "Drink water", "Wear light clothes", "Monitor temperature"],
+      "common_otc": ["Paracetamol if safe", "ORS or fluids"],
+      "seek_help_now": ["Very high fever", "Confusion", "Breathing trouble", "Seizure"]
+    },
+    {
+      "name": "Cough",
+      "summary": "A mild cough can happen with cold, flu, throat irritation, allergy, or viral illness.",
+      "keywords": ["cough", "dry cough", "wet cough", "throat", "irritation"],
+      "basic_care": ["Warm fluids", "Rest", "Avoid smoke", "Use steam if congested"],
+      "common_otc": ["Honey if age-appropriate and suitable", "Lozenges", "Paracetamol if fever is present and safe"],
+      "seek_help_now": ["Breathing trouble", "Blue lips", "Coughing blood", "Chest pain"]
+    },
+    {
+      "name": "Bronchitis-like Symptoms",
+      "summary": "Cough with mucus, chest discomfort, and tiredness may suggest bronchitis-like symptoms.",
+      "keywords": ["bronchitis", "mucus", "chest", "cough", "phlegm", "wheezing"],
+      "basic_care": ["Rest", "Warm fluids", "Avoid smoke", "Monitor breathing"],
+      "common_otc": ["Paracetamol if safe", "Simple cough support", "Hydration"],
+      "seek_help_now": ["Breathing difficulty", "Blue lips", "High fever", "Chest pain"]
+    },
+    {
+      "name": "Wheezing / Mild Asthma-like Symptoms",
+      "summary": "Wheezing, chest tightness, and cough may suggest asthma-like or allergic airway symptoms.",
+      "keywords": ["wheezing", "asthma", "chest tight", "breathless", "allergy", "cough"],
+      "basic_care": ["Sit upright", "Avoid smoke or triggers", "Stay calm", "Use your prescribed inhaler if you already have one"],
+      "common_otc": ["No new inhaler advice here", "Hydration", "Rest"],
+      "seek_help_now": ["Severe breathing trouble", "Blue lips", "Cannot speak full sentences", "Chest pain"]
+    },
+    {
+      "name": "Urinary Burning / UTI-like Symptoms",
+      "summary": "Burning urination, frequent urination, and lower belly discomfort may suggest urinary irritation or UTI-like symptoms.",
+      "keywords": ["urine", "urination", "burning", "uti", "pee", "frequent", "bladder"],
+      "basic_care": ["Drink water", "Do not hold urine", "Maintain hygiene", "Rest"],
+      "common_otc": ["Hydration", "Simple pain support like paracetamol if safe"],
+      "seek_help_now": ["Blood in urine", "High fever", "Back pain with fever", "Pregnancy with symptoms"]
+    },
+    {
+      "name": "Menstrual Cramps",
+      "summary": "Lower belly cramps around periods can suggest menstrual pain.",
+      "keywords": ["period", "menstrual", "cramps", "lower belly", "menses"],
+      "basic_care": ["Warm compress", "Rest", "Light exercise", "Drink water"],
+      "common_otc": ["Paracetamol if safe", "Warm tea", "Light meals"],
+      "seek_help_now": ["Very heavy bleeding", "Fainting", "Severe one-sided pain", "Pregnancy possibility with pain"]
+    },
+    {
+      "name": "Mild Toothache",
+      "summary": "Tooth pain with sensitivity or chewing pain can suggest a dental issue.",
+      "keywords": ["tooth", "teeth", "toothache", "gum", "chewing", "sensitivity"],
+      "basic_care": ["Rinse mouth gently", "Avoid very cold or hot foods", "Keep mouth clean", "Eat soft food"],
+      "common_otc": ["Paracetamol if safe", "Simple salt-water rinse"],
+      "seek_help_now": ["Face swelling", "High fever", "Trouble swallowing", "Severe spreading pain"]
+    },
+    {
+      "name": "Mouth Ulcer",
+      "summary": "Small painful ulcers inside the mouth can happen with irritation, stress, or minor nutritional issues.",
+      "keywords": ["mouth ulcer", "ulcer", "mouth sore", "tongue sore", "canker"],
+      "basic_care": ["Avoid spicy food", "Drink water", "Maintain oral hygiene", "Use soft foods"],
+      "common_otc": ["Simple soothing oral gel if usually safe", "Salt-water rinse"],
+      "seek_help_now": ["Large persistent ulcer", "Fever", "Unable to eat or drink", "Severe swelling"]
+    },
+    {
+      "name": "Motion Sickness",
+      "summary": "Nausea, dizziness, and vomiting during travel can suggest motion sickness.",
+      "keywords": ["motion sickness", "travel", "car", "bus", "sea", "nausea", "dizzy"],
+      "basic_care": ["Sit facing forward", "Take fresh air", "Sip water", "Avoid heavy meals before travel"],
+      "common_otc": ["Ginger support if tolerated", "Light snacks", "Hydration"],
+      "seek_help_now": ["Severe dehydration", "Fainting", "Chest pain", "Confusion"]
+    },
+    {
+      "name": "Mild Sunburn",
+      "summary": "Red painful skin after too much sun can suggest a mild sunburn.",
+      "keywords": ["sunburn", "sun", "red skin", "burning skin", "heat"],
+      "basic_care": ["Move out of sun", "Cool compress", "Drink water", "Use loose clothing"],
+      "common_otc": ["Aloe-based soothing gel if suitable", "Paracetamol if safe"],
+      "seek_help_now": ["Large blisters", "Fever", "Confusion", "Severe dehydration"]
+    },
+    {
+      "name": "Heat Exhaustion-like Symptoms",
+      "summary": "Heavy sweating, weakness, dizziness, headache, and nausea after heat exposure may suggest heat exhaustion-like symptoms.",
+      "keywords": ["heat", "exhaustion", "sun", "sweating", "weakness", "dizzy", "hot"],
+      "basic_care": ["Move to a cool place", "Drink ORS or water", "Rest", "Loosen tight clothes"],
+      "common_otc": ["ORS packets", "Cool fluids"],
+      "seek_help_now": ["Confusion", "Fainting", "Very high body temperature", "Seizure"]
+    },
+    {
+      "name": "Mild Burn",
+      "summary": "A small superficial burn may cause redness and pain without deep tissue damage.",
+      "keywords": ["burn", "hot water", "steam", "kitchen", "red", "skin"],
+      "basic_care": ["Cool running water on the area", "Protect the skin gently", "Do not burst blisters", "Keep it clean"],
+      "common_otc": ["Simple non-stick dressing if needed", "Paracetamol if safe"],
+      "seek_help_now": ["Large burn", "Face burn", "Electrical burn", "Breathing problem after smoke"]
+    },
+    {
+      "name": "Insect Bite",
+      "summary": "A mild insect bite can cause itching, redness, and small swelling.",
+      "keywords": ["insect", "bite", "mosquito", "sting", "itching", "swelling"],
+      "basic_care": ["Wash the area", "Use cool compress", "Avoid scratching", "Observe for spreading"],
+      "common_otc": ["Calamine lotion", "Common antihistamine if safe"],
+      "seek_help_now": ["Breathing trouble", "Face swelling", "Severe dizziness", "Fast spreading redness"]
+    },
+    {
+      "name": "Ringworm-like Fungal Rash",
+      "summary": "A round itchy rash with scaly edges may suggest a fungal skin rash like ringworm.",
+      "keywords": ["ringworm", "fungal", "itchy patch", "round rash", "scaly"],
+      "basic_care": ["Keep skin dry", "Avoid sharing towels", "Wear clean loose clothes", "Do not scratch"],
+      "common_otc": ["Simple antifungal cream only if you already use such products safely", "Calamine for itch if suitable"],
+      "seek_help_now": ["Rash spreading fast with fever", "Face swelling", "Severe pain", "Widespread blistering"]
+    },
+    {
+      "name": "Acne",
+      "summary": "Small pimples, oiliness, and facial bumps can suggest acne.",
+      "keywords": ["acne", "pimples", "pimple", "oily skin", "blackheads"],
+      "basic_care": ["Wash gently", "Avoid picking", "Use non-greasy products", "Keep pillowcases clean"],
+      "common_otc": ["Simple acne face wash if already tolerated", "Gentle skin care"],
+      "seek_help_now": ["Severe painful swelling", "Signs of infection", "Rapid facial swelling", "Fever"]
+    },
+    {
+      "name": "Eczema-like Dry Itchy Skin",
+      "summary": "Dry itchy patches can suggest eczema-like skin irritation.",
+      "keywords": ["eczema", "dry skin", "itchy patch", "irritation", "skin"],
+      "basic_care": ["Use moisturizer", "Avoid harsh soap", "Keep nails short", "Wear soft clothes"],
+      "common_otc": ["Moisturizer", "Calamine if soothing", "Common antihistamine if safe for itching"],
+      "seek_help_now": ["Signs of skin infection", "Widespread rash with fever", "Face swelling", "Severe blistering"]
+    },
+    {
+      "name": "Simple Bruise",
+      "summary": "A bruise after a minor hit can cause blue or purple skin discoloration and tenderness.",
+      "keywords": ["bruise", "blue", "purple", "hit", "injury", "tender"],
+      "basic_care": ["Rest the area", "Use ice early", "Elevate if swollen", "Avoid more pressure"],
+      "common_otc": ["Paracetamol if safe", "Cold pack"],
+      "seek_help_now": ["Very large swelling", "Head injury", "Severe pain", "Cannot move the limb"]
+    },
+    {
+      "name": "Minor Cut / Scrape",
+      "summary": "A small cut or scrape can cause mild pain and bleeding.",
+      "keywords": ["cut", "scrape", "bleeding", "wound", "skin"],
+      "basic_care": ["Wash gently with clean water", "Apply pressure if bleeding", "Keep it covered", "Watch for infection"],
+      "common_otc": ["Simple bandage", "Mild antiseptic if already tolerated"],
+      "seek_help_now": ["Bleeding not stopping", "Deep wound", "Animal bite", "Signs of severe infection"]
+    }
+  ]
+}
