@@ -4,7 +4,7 @@ This is a lightweight Streamlit chatbot that uses:
 
 - a small Hugging Face model: `sshleifer/tiny-gpt2`
 - a separate JSON symptom template file
-- basic symptom matching to make the chatbot a little more useful on weak systems
+- Symptom matching to make the chatbot a little more useful on weak systems
 
 ## Run
 
