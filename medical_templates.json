@@ -400,6 +400,1046 @@
       "basic_care": ["Wash gently with clean water", "Apply pressure if bleeding", "Keep it covered", "Watch for infection"],
       "common_otc": ["Simple bandage", "Mild antiseptic if already tolerated"],
       "seek_help_now": ["Bleeding not stopping", "Deep wound", "Animal bite", "Signs of severe infection"]
+    },
+    {
+      "name": "Tonsillitis-like Symptoms",
+      "summary": "Severe sore throat, painful swallowing, fever, and swollen neck glands may suggest tonsillitis-like symptoms.",
+      "keywords": ["tonsillitis", "tonsil", "throat pain", "swallowing", "neck glands", "fever"],
+      "basic_care": ["Drink warm fluids", "Rest voice", "Use warm gargles", "Rest and monitor fever"],
+      "common_otc": ["Paracetamol if safe", "Simple throat lozenges", "Hydration support"],
+      "seek_help_now": ["Breathing trouble", "Unable to swallow fluids", "High fever not improving", "One-sided severe throat swelling"]
+    },
+    {
+      "name": "Laryngitis-like Voice Strain",
+      "summary": "Hoarse voice, throat discomfort, and dry cough may suggest laryngitis-like irritation.",
+      "keywords": ["hoarse", "voice", "laryngitis", "lost voice", "throat", "dry cough"],
+      "basic_care": ["Rest your voice", "Drink warm fluids", "Avoid smoking exposure", "Use humid air if possible"],
+      "common_otc": ["Simple lozenges", "Warm fluids", "Paracetamol if pain and safe"],
+      "seek_help_now": ["Breathing difficulty", "Voice loss beyond 2 weeks", "Coughing blood", "Severe throat pain with fever"]
+    },
+    {
+      "name": "Pneumonia-like Chest Infection",
+      "summary": "Fever, productive cough, chest pain, and breathlessness can suggest a chest infection such as pneumonia-like illness.",
+      "keywords": ["pneumonia", "chest infection", "phlegm", "fever", "chest pain", "breathless"],
+      "basic_care": ["Rest", "Hydrate well", "Monitor breathing", "Seek medical assessment soon"],
+      "common_otc": ["Paracetamol if safe", "Hydration", "Simple cough support"],
+      "seek_help_now": ["Shortness of breath", "Low oxygen", "Confusion", "Persistent high fever"]
+    },
+    {
+      "name": "Bronchial Allergy-like Symptoms",
+      "summary": "Recurrent cough, wheeze, and chest tightness after triggers can suggest bronchial allergy-like symptoms.",
+      "keywords": ["allergic cough", "dust", "wheeze", "chest tight", "trigger", "night cough"],
+      "basic_care": ["Avoid known triggers", "Keep room dust low", "Stay hydrated", "Use prescribed inhaler if already advised"],
+      "common_otc": ["No new inhaler advice", "Hydration", "Steam if comfortable"],
+      "seek_help_now": ["Cannot speak full sentences", "Blue lips", "Severe breathlessness", "Chest pain"]
+    },
+    {
+      "name": "Anemia-like Symptoms",
+      "summary": "Tiredness, pale skin, dizziness, and low stamina may suggest anemia-like symptoms.",
+      "keywords": ["anemia", "pale", "fatigue", "tired", "weak", "dizzy"],
+      "basic_care": ["Rest", "Hydrate", "Eat balanced iron-rich food", "Arrange routine blood test"],
+      "common_otc": ["No exact iron dosing advice here", "Hydration", "Nutritious diet support"],
+      "seek_help_now": ["Chest pain", "Fainting", "Severe breathlessness", "Rapid heartbeat with weakness"]
+    },
+    {
+      "name": "High Blood Pressure-like Symptoms",
+      "summary": "Most high blood pressure causes no symptoms, but headache, dizziness, or blurred vision can occur in some people.",
+      "keywords": ["blood pressure", "bp", "hypertension", "headache", "blurred vision", "dizzy"],
+      "basic_care": ["Check blood pressure properly", "Reduce salt", "Sleep well", "Follow up with a clinician"],
+      "common_otc": ["No BP medicine start advice here", "Hydration", "Lifestyle support"],
+      "seek_help_now": ["Severe headache with vision change", "Chest pain", "Weakness on one side", "Confusion"]
+    },
+    {
+      "name": "High Blood Sugar-like Symptoms",
+      "summary": "Excess thirst, frequent urination, tiredness, and weight change may suggest high blood sugar-like symptoms.",
+      "keywords": ["high sugar", "diabetes", "frequent urination", "thirst", "fatigue", "weight loss"],
+      "basic_care": ["Hydrate", "Avoid sugary drinks", "Track symptoms", "Arrange blood sugar testing"],
+      "common_otc": ["No diabetes medicine dosing advice", "Hydration", "Balanced meals"],
+      "seek_help_now": ["Vomiting", "Deep fast breathing", "Confusion", "Severe weakness"]
+    },
+    {
+      "name": "Hypothyroid-like Symptoms",
+      "summary": "Low energy, dry skin, constipation, and cold intolerance may suggest hypothyroid-like symptoms.",
+      "keywords": ["thyroid", "hypothyroid", "cold intolerance", "constipation", "dry skin", "fatigue"],
+      "basic_care": ["Get thyroid test", "Maintain regular sleep", "Eat balanced meals", "Keep follow-up with doctor"],
+      "common_otc": ["No thyroid medicine self-start advice", "Hydration", "Healthy routine"],
+      "seek_help_now": ["Severe drowsiness", "Breathing slowdown", "Confusion", "Chest pain"]
+    },
+    {
+      "name": "Hyperthyroid-like Symptoms",
+      "summary": "Palpitations, sweating, anxiety, heat intolerance, and weight loss may suggest hyperthyroid-like symptoms.",
+      "keywords": ["hyperthyroid", "thyroid", "palpitations", "heat intolerance", "sweating", "weight loss"],
+      "basic_care": ["Reduce caffeine", "Hydrate", "Rest", "Arrange thyroid evaluation"],
+      "common_otc": ["No thyroid medicine self-adjust advice", "Hydration", "Stress reduction"],
+      "seek_help_now": ["Very fast heartbeat", "Chest pain", "Fainting", "Severe breathlessness"]
+    },
+    {
+      "name": "Gastritis-like Symptoms",
+      "summary": "Upper stomach burning, nausea, and discomfort after meals can suggest gastritis-like irritation.",
+      "keywords": ["gastritis", "upper stomach", "burning", "nausea", "acidity", "after meals"],
+      "basic_care": ["Avoid spicy or oily foods", "Eat smaller meals", "Avoid late-night meals", "Hydrate"],
+      "common_otc": ["Simple antacid if safe", "Light diet", "Hydration"],
+      "seek_help_now": ["Vomiting blood", "Black stool", "Severe persistent pain", "Repeated vomiting"]
+    },
+    {
+      "name": "Hemorrhoids-like Symptoms",
+      "summary": "Pain, itching, or small blood streaks during bowel movement can suggest hemorrhoids-like symptoms.",
+      "keywords": ["hemorrhoids", "piles", "anal pain", "blood streak", "constipation", "itching"],
+      "basic_care": ["Increase fiber", "Drink water", "Avoid straining", "Take warm sitz bath"],
+      "common_otc": ["Fiber supplement if tolerated", "Simple soothing local care", "Hydration"],
+      "seek_help_now": ["Heavy bleeding", "Severe pain", "Black stool", "Dizziness from blood loss"]
+    },
+    {
+      "name": "Kidney Stone-like Pain",
+      "summary": "Sudden severe side pain radiating to groin with nausea can suggest kidney stone-like symptoms.",
+      "keywords": ["kidney stone", "flank pain", "side pain", "groin pain", "urine blood", "colic"],
+      "basic_care": ["Hydrate if able", "Rest", "Track urine symptoms", "Seek clinical review soon"],
+      "common_otc": ["Paracetamol if safe", "Hydration"],
+      "seek_help_now": ["Fever with flank pain", "Cannot pass urine", "Severe vomiting", "Persistent severe pain"]
+    },
+    {
+      "name": "Sciatica-like Leg Pain",
+      "summary": "Back pain shooting down one leg with tingling can suggest sciatica-like nerve irritation.",
+      "keywords": ["sciatica", "shooting leg pain", "tingling", "back to leg", "nerve pain"],
+      "basic_care": ["Avoid heavy lifting", "Gentle walking", "Use posture support", "Warm compress if helpful"],
+      "common_otc": ["Paracetamol if safe", "Simple topical support"],
+      "seek_help_now": ["Leg weakness", "Loss of bladder control", "Numbness around groin", "Severe injury"]
+    },
+    {
+      "name": "Plantar Fasciitis-like Heel Pain",
+      "summary": "Heel pain worse with first steps in the morning may suggest plantar fasciitis-like symptoms.",
+      "keywords": ["heel pain", "plantar fasciitis", "morning pain", "foot pain", "walking pain"],
+      "basic_care": ["Use supportive footwear", "Gentle calf stretch", "Avoid long standing", "Ice after activity"],
+      "common_otc": ["Paracetamol if safe", "Simple heel cushion"],
+      "seek_help_now": ["Severe swelling", "Unable to bear weight", "Fever with foot pain", "Recent major injury"]
+    },
+    {
+      "name": "Carpal Tunnel-like Wrist Symptoms",
+      "summary": "Numbness, tingling, and wrist pain especially at night can suggest carpal tunnel-like symptoms.",
+      "keywords": ["carpal tunnel", "wrist pain", "hand numbness", "tingling fingers", "night numbness"],
+      "basic_care": ["Rest wrist", "Take breaks from repetitive motion", "Use neutral wrist position", "Gentle stretching"],
+      "common_otc": ["Paracetamol if safe", "Simple wrist support"],
+      "seek_help_now": ["Progressive weakness", "Severe persistent numbness", "Hand injury", "Sudden one-sided weakness"]
+    },
+    {
+      "name": "Allergic Rhinitis",
+      "summary": "Runny nose, sneezing, itchy eyes, and nasal congestion may suggest allergic rhinitis.",
+      "keywords": ["allergic rhinitis", "runny nose", "sneezing", "itchy eyes", "pollen", "dust allergy"],
+      "basic_care": ["Avoid triggers", "Keep indoor air clean", "Use saline rinse", "Stay hydrated"],
+      "common_otc": ["Common antihistamine if safe", "Saline spray", "Lubricating eye drops if needed"],
+      "seek_help_now": ["Breathing trouble", "Face swelling", "Severe wheezing", "Dizziness with fainting"]
+    },
+    {
+      "name": "Post-Nasal Drip",
+      "summary": "Mucus dripping in the throat with cough and throat clearing can suggest post-nasal drip.",
+      "keywords": ["post nasal drip", "throat clearing", "mucus in throat", "night cough", "runny nose"],
+      "basic_care": ["Use saline rinse", "Hydrate", "Sleep with head slightly elevated", "Avoid smoke"],
+      "common_otc": ["Saline spray", "Simple cough support", "Common antihistamine if safe"],
+      "seek_help_now": ["Breathing trouble", "High fever", "Chest pain", "Coughing blood"]
+    },
+    {
+      "name": "Acute Pharyngitis-like Symptoms",
+      "summary": "Sore throat, fever, and painful swallowing can suggest pharyngitis-like symptoms.",
+      "keywords": ["pharyngitis", "sore throat", "painful swallowing", "throat infection", "fever"],
+      "basic_care": ["Warm fluids", "Gargles", "Voice rest", "Hydration"],
+      "common_otc": ["Paracetamol if safe", "Lozenges", "Warm tea with honey if suitable"],
+      "seek_help_now": ["Unable to swallow fluids", "Breathing trouble", "High fever", "Severe neck swelling"]
+    },
+    {
+      "name": "Otitis Externa-like Ear Canal Irritation",
+      "summary": "Outer ear pain, itching, and tenderness can suggest otitis externa-like irritation.",
+      "keywords": ["otitis externa", "ear canal pain", "itchy ear", "swimmer ear", "ear tenderness"],
+      "basic_care": ["Keep ear dry", "Avoid inserting objects", "Rest", "Do not scratch ear canal"],
+      "common_otc": ["Paracetamol if safe", "Warm compress outside ear", "Hydration"],
+      "seek_help_now": ["Severe pain", "Fever", "Spreading swelling", "Hearing loss"]
+    },
+    {
+      "name": "Tinnitus-like Symptoms",
+      "summary": "Ringing or buzzing in the ear can suggest tinnitus-like symptoms.",
+      "keywords": ["tinnitus", "ringing ear", "buzzing", "ear noise", "hissing"],
+      "basic_care": ["Reduce loud sound exposure", "Manage stress", "Limit caffeine", "Sleep well"],
+      "common_otc": ["No direct OTC cure", "Hydration", "Relaxation support"],
+      "seek_help_now": ["Sudden hearing loss", "Severe dizziness", "Head injury", "One-sided persistent tinnitus with pain"]
+    },
+    {
+      "name": "Cerumen Impaction-like Symptoms",
+      "summary": "Blocked ear feeling and reduced hearing can suggest earwax buildup.",
+      "keywords": ["earwax", "blocked ear", "wax impaction", "reduced hearing", "ear fullness"],
+      "basic_care": ["Do not use sharp objects", "Keep ear dry", "Seek proper ear exam if persistent", "Avoid cotton buds deep in ear"],
+      "common_otc": ["Simple wax-softening drops if already tolerated", "Hydration"],
+      "seek_help_now": ["Severe pain", "Fever", "Ear discharge", "Sudden hearing loss"]
+    },
+    {
+      "name": "Blepharitis-like Eyelid Irritation",
+      "summary": "Itchy, crusty, or irritated eyelids can suggest blepharitis-like symptoms.",
+      "keywords": ["blepharitis", "eyelid irritation", "crusty eyelids", "itchy eyelids", "red eyelid"],
+      "basic_care": ["Clean eyelid margins gently", "Warm compress", "Avoid eye rubbing", "Maintain hand hygiene"],
+      "common_otc": ["Lubricating drops", "Warm compress", "Gentle lid cleansing"],
+      "seek_help_now": ["Severe eye pain", "Vision changes", "Eye swelling with fever", "Light sensitivity with pain"]
+    },
+    {
+      "name": "Stye-like Eyelid Bump",
+      "summary": "A tender small bump on eyelid may suggest a stye-like infection.",
+      "keywords": ["stye", "eyelid bump", "painful eyelid", "eye boil", "chalazion"],
+      "basic_care": ["Warm compress", "Do not squeeze", "Keep eyelid clean", "Avoid eye makeup temporarily"],
+      "common_otc": ["Warm compress", "Lubricating drops if dryness"],
+      "seek_help_now": ["Vision change", "Spreading eyelid swelling", "Fever", "Severe pain"]
+    },
+    {
+      "name": "Upper Back Muscle Pain",
+      "summary": "Pain around upper back and shoulder blade can suggest posture-related muscle strain.",
+      "keywords": ["upper back pain", "shoulder blade pain", "posture pain", "muscle tightness", "desk work pain"],
+      "basic_care": ["Gentle stretches", "Improve posture", "Take movement breaks", "Warm compress"],
+      "common_otc": ["Paracetamol if safe", "Topical pain support"],
+      "seek_help_now": ["Chest pain", "Breathing trouble", "Arm weakness", "Recent major injury"]
+    },
+    {
+      "name": "Shoulder Strain",
+      "summary": "Shoulder pain after overuse or sudden movement may suggest shoulder strain.",
+      "keywords": ["shoulder pain", "shoulder strain", "lifting pain", "rotator cuff", "stiff shoulder"],
+      "basic_care": ["Rest from painful activity", "Ice early after injury", "Gentle range exercises later", "Avoid overhead strain"],
+      "common_otc": ["Paracetamol if safe", "Simple topical support"],
+      "seek_help_now": ["Cannot raise arm", "Severe swelling", "Deformity", "Numbness"]
+    },
+    {
+      "name": "Tennis Elbow-like Symptoms",
+      "summary": "Outer elbow pain with gripping can suggest tennis elbow-like strain.",
+      "keywords": ["tennis elbow", "elbow pain", "grip pain", "forearm strain", "lateral elbow"],
+      "basic_care": ["Reduce repetitive strain", "Use ice after activity", "Gentle stretching", "Rest the arm"],
+      "common_otc": ["Paracetamol if safe", "Simple elbow support"],
+      "seek_help_now": ["Severe swelling", "Cannot move elbow", "Numbness", "Recent trauma"]
+    },
+    {
+      "name": "Wrist Sprain-like Injury",
+      "summary": "Pain and swelling after wrist twist or fall may suggest wrist sprain-like injury.",
+      "keywords": ["wrist sprain", "wrist injury", "wrist swelling", "fall on hand", "wrist pain"],
+      "basic_care": ["Rest", "Ice", "Compression if comfortable", "Elevate"],
+      "common_otc": ["Paracetamol if safe", "Simple wrist brace"],
+      "seek_help_now": ["Severe pain", "Deformity", "Numb fingers", "Cannot move wrist"]
+    },
+    {
+      "name": "Finger Sprain-like Injury",
+      "summary": "Finger pain, swelling, and stiffness after minor trauma can suggest finger sprain-like injury.",
+      "keywords": ["finger sprain", "finger injury", "jammed finger", "finger swelling", "hand injury"],
+      "basic_care": ["Rest", "Ice", "Protect finger", "Avoid forceful use"],
+      "common_otc": ["Paracetamol if safe", "Simple finger splint support"],
+      "seek_help_now": ["Deformity", "Severe swelling", "Numbness", "Open wound"]
+    },
+    {
+      "name": "Hip Strain-like Pain",
+      "summary": "Hip pain after activity or overuse can suggest hip strain-like pain.",
+      "keywords": ["hip pain", "hip strain", "groin pain", "walking pain", "overuse"],
+      "basic_care": ["Reduce activity", "Ice or warm compress", "Gentle stretching", "Rest"],
+      "common_otc": ["Paracetamol if safe", "Topical pain support"],
+      "seek_help_now": ["Cannot bear weight", "Severe trauma", "Fever with hip pain", "Deformity"]
+    },
+    {
+      "name": "Groin Strain-like Pain",
+      "summary": "Inner thigh or groin pain after sports can suggest groin strain-like injury.",
+      "keywords": ["groin pain", "groin strain", "inner thigh pain", "sports injury", "pull"],
+      "basic_care": ["Rest", "Ice in early phase", "Avoid painful movement", "Gentle rehab later"],
+      "common_otc": ["Paracetamol if safe", "Supportive compression if comfortable"],
+      "seek_help_now": ["Severe swelling", "Cannot walk", "Severe injury", "Numbness"]
+    },
+    {
+      "name": "Shin Splints-like Pain",
+      "summary": "Front lower leg pain during running can suggest shin splints-like symptoms.",
+      "keywords": ["shin splints", "shin pain", "running pain", "lower leg pain", "exercise pain"],
+      "basic_care": ["Reduce impact activity", "Ice after exercise", "Use proper shoes", "Gradual return to training"],
+      "common_otc": ["Paracetamol if safe", "Simple supportive footwear"],
+      "seek_help_now": ["Severe swelling", "Pain at rest worsening", "Cannot walk", "Trauma-related pain"]
+    },
+    {
+      "name": "Plantar Wart-like Lesion",
+      "summary": "A rough painful spot on sole may suggest plantar wart-like lesion.",
+      "keywords": ["plantar wart", "foot wart", "sole lesion", "painful foot spot", "wart"],
+      "basic_care": ["Keep feet clean and dry", "Avoid picking", "Use clean footwear", "Avoid sharing towels"],
+      "common_otc": ["Simple wart care products if tolerated", "Protective padding"],
+      "seek_help_now": ["Bleeding lesion", "Rapid spread", "Severe pain", "Diabetes with foot lesion"]
+    },
+    {
+      "name": "Bunion-like Foot Pain",
+      "summary": "Painful bump near big toe joint can suggest bunion-like foot issue.",
+      "keywords": ["bunion", "big toe bump", "forefoot pain", "toe deformity", "shoe pain"],
+      "basic_care": ["Wear wide toe-box shoes", "Avoid prolonged pressure", "Use padding", "Rest feet"],
+      "common_otc": ["Paracetamol if safe", "Protective toe padding"],
+      "seek_help_now": ["Severe redness", "Hot swollen joint", "Fever", "Cannot walk"]
+    },
+    {
+      "name": "Gout-like Flare",
+      "summary": "Sudden severe joint pain, often in big toe, with redness and swelling may suggest gout-like flare.",
+      "keywords": ["gout", "big toe pain", "sudden joint pain", "red swollen joint", "uric acid"],
+      "basic_care": ["Rest joint", "Hydrate", "Avoid alcohol and purine-heavy foods", "Seek clinical review"],
+      "common_otc": ["Paracetamol if safe", "Hydration"],
+      "seek_help_now": ["Fever with joint pain", "Severe persistent pain", "Multiple joints involved suddenly", "Cannot bear weight"]
+    },
+    {
+      "name": "Osteoarthritis-like Joint Symptoms",
+      "summary": "Chronic joint stiffness and pain worsening with use may suggest osteoarthritis-like symptoms.",
+      "keywords": ["osteoarthritis", "joint stiffness", "chronic knee pain", "wear and tear", "morning stiffness"],
+      "basic_care": ["Low-impact exercise", "Weight management", "Joint-friendly movement", "Warm compress"],
+      "common_otc": ["Paracetamol if safe", "Topical pain gel"],
+      "seek_help_now": ["Hot swollen joint", "Fever", "Sudden severe locking", "New major deformity"]
+    },
+    {
+      "name": "Rheumatoid-like Joint Symptoms",
+      "summary": "Symmetric joint pain, swelling, and morning stiffness can suggest rheumatoid-like symptoms.",
+      "keywords": ["rheumatoid", "joint swelling", "morning stiffness", "small joint pain", "autoimmune"],
+      "basic_care": ["Rest during flare", "Gentle movement", "Track symptoms", "Arrange rheumatology review"],
+      "common_otc": ["Paracetamol if safe", "Warm compress"],
+      "seek_help_now": ["High fever", "Severe functional loss", "Breathing symptoms", "Chest pain"]
+    },
+    {
+      "name": "Fibromyalgia-like Symptoms",
+      "summary": "Widespread body pain, fatigue, and sleep issues can suggest fibromyalgia-like symptoms.",
+      "keywords": ["fibromyalgia", "widespread pain", "fatigue", "sleep issues", "tender points"],
+      "basic_care": ["Regular low-impact activity", "Sleep routine", "Stress management", "Hydration"],
+      "common_otc": ["Paracetamol if safe", "Relaxation support"],
+      "seek_help_now": ["Severe depression", "Self-harm thoughts", "Chest pain", "New neurologic deficits"]
+    },
+    {
+      "name": "Irritable Bowel-like Symptoms",
+      "summary": "Recurrent abdominal discomfort with constipation or diarrhea can suggest irritable bowel-like symptoms.",
+      "keywords": ["ibs", "irritable bowel", "abdominal discomfort", "bloating", "constipation", "diarrhea"],
+      "basic_care": ["Track trigger foods", "Eat regular meals", "Increase fiber gradually", "Manage stress"],
+      "common_otc": ["Fiber supplement if tolerated", "Hydration", "Simple probiotics if tolerated"],
+      "seek_help_now": ["Blood in stool", "Weight loss", "Night symptoms worsening", "Severe persistent pain"]
+    },
+    {
+      "name": "Peptic Ulcer-like Symptoms",
+      "summary": "Burning upper abdominal pain related to meals may suggest peptic ulcer-like symptoms.",
+      "keywords": ["peptic ulcer", "stomach ulcer", "burning pain", "epigastric pain", "meal-related pain"],
+      "basic_care": ["Avoid NSAID self-use", "Avoid smoking and alcohol", "Eat smaller meals", "Seek clinical evaluation"],
+      "common_otc": ["Simple antacid if safe", "Light diet", "Hydration"],
+      "seek_help_now": ["Vomiting blood", "Black stool", "Sudden severe abdominal pain", "Persistent vomiting"]
+    },
+    {
+      "name": "Lactose Intolerance-like Symptoms",
+      "summary": "Bloating, gas, and loose stools after milk products may suggest lactose intolerance-like symptoms.",
+      "keywords": ["lactose intolerance", "milk causes gas", "bloating", "diarrhea after milk", "dairy sensitivity"],
+      "basic_care": ["Limit lactose foods", "Try small portions", "Hydrate", "Track food triggers"],
+      "common_otc": ["Lactase support products if tolerated", "Hydration", "Light meals"],
+      "seek_help_now": ["Blood in stool", "Severe dehydration", "Persistent vomiting", "Severe abdominal pain"]
+    },
+    {
+      "name": "Gallbladder-like Biliary Pain",
+      "summary": "Right upper belly pain after fatty meals with nausea can suggest gallbladder-like symptoms.",
+      "keywords": ["gallbladder", "biliary colic", "right upper abdomen", "fatty meal pain", "nausea"],
+      "basic_care": ["Avoid fatty foods", "Hydrate", "Rest", "Arrange medical review"],
+      "common_otc": ["Paracetamol if safe", "Light low-fat diet"],
+      "seek_help_now": ["Fever with pain", "Persistent vomiting", "Yellow eyes", "Severe persistent pain"]
+    },
+    {
+      "name": "Appendicitis-like Symptoms",
+      "summary": "Pain starting near navel and moving to right lower abdomen with fever or nausea can suggest appendicitis-like symptoms.",
+      "keywords": ["appendicitis", "right lower abdomen", "navel pain", "fever", "nausea"],
+      "basic_care": ["Avoid heavy meals", "Rest", "Seek urgent in-person evaluation", "Do not ignore worsening pain"],
+      "common_otc": ["No specific OTC recommendation before diagnosis"],
+      "seek_help_now": ["Worsening right lower abdominal pain", "Fever", "Persistent vomiting", "Severe tenderness"]
+    },
+    {
+      "name": "Urinary Frequency without Pain",
+      "summary": "Frequent urination without burning can happen with high fluid intake, stress, or blood sugar issues.",
+      "keywords": ["frequent urination", "pee often", "urinary frequency", "no burning", "night urination"],
+      "basic_care": ["Track fluid timing", "Reduce late caffeine", "Monitor symptoms", "Check blood sugar if risk exists"],
+      "common_otc": ["Hydration balance", "No direct OTC cure"],
+      "seek_help_now": ["Blood in urine", "Fever", "Severe lower abdominal pain", "Unable to urinate"]
+    },
+    {
+      "name": "Urinary Urgency-like Symptoms",
+      "summary": "Sudden urge to urinate with small amounts may suggest bladder irritation-like symptoms.",
+      "keywords": ["urinary urgency", "bladder irritation", "pee urgency", "frequent pee", "bladder discomfort"],
+      "basic_care": ["Hydrate steadily", "Avoid bladder irritants", "Do not hold urine", "Track triggers"],
+      "common_otc": ["Hydration", "Simple pain support if safe"],
+      "seek_help_now": ["Fever", "Back pain", "Blood in urine", "Unable to urinate"]
+    },
+    {
+      "name": "Stress Urinary Leakage-like Symptoms",
+      "summary": "Urine leakage with cough or laugh may suggest stress urinary leakage-like symptoms.",
+      "keywords": ["urine leakage", "stress incontinence", "leak with cough", "bladder control", "pelvic floor"],
+      "basic_care": ["Pelvic floor exercises", "Weight management", "Limit caffeine", "Timed voiding"],
+      "common_otc": ["No specific OTC cure", "Protective pads"],
+      "seek_help_now": ["New neurologic weakness", "Painful urination with fever", "Blood in urine", "Sudden complete loss of bladder control"]
+    },
+    {
+      "name": "Vaginal Yeast-like Symptoms",
+      "summary": "Itching with thick white discharge may suggest vaginal yeast-like symptoms.",
+      "keywords": ["yeast infection", "vaginal itching", "white discharge", "candida", "burning"],
+      "basic_care": ["Keep area dry", "Avoid harsh soaps", "Wear breathable cotton clothing", "Maintain hygiene"],
+      "common_otc": ["Simple antifungal vaginal products if already tolerated", "Hydration"],
+      "seek_help_now": ["Pelvic pain with fever", "Pregnancy with symptoms", "Foul-smelling discharge", "Persistent severe symptoms"]
+    },
+    {
+      "name": "Bacterial Vaginosis-like Symptoms",
+      "summary": "Thin discharge with unusual odor may suggest bacterial vaginosis-like symptoms.",
+      "keywords": ["bacterial vaginosis", "vaginal odor", "thin discharge", "bv", "vaginal discharge"],
+      "basic_care": ["Avoid douching", "Maintain hygiene", "Use breathable underwear", "Seek clinician for diagnosis"],
+      "common_otc": ["No antibiotic advice here", "Hydration"],
+      "seek_help_now": ["Fever", "Pelvic pain", "Pregnancy with symptoms", "Persistent worsening discharge"]
+    },
+    {
+      "name": "Premenstrual Syndrome-like Symptoms",
+      "summary": "Mood changes, bloating, breast tenderness, and cramps before periods can suggest PMS-like symptoms.",
+      "keywords": ["pms", "premenstrual", "period mood", "bloating", "breast tenderness", "period cramps"],
+      "basic_care": ["Regular sleep", "Light exercise", "Reduce caffeine", "Hydrate and balanced meals"],
+      "common_otc": ["Paracetamol if safe", "Warm compress", "Hydration"],
+      "seek_help_now": ["Severe depression", "Self-harm thoughts", "Very heavy bleeding", "Severe one-sided pelvic pain"]
+    },
+    {
+      "name": "Perimenopause-like Symptoms",
+      "summary": "Irregular periods, hot flashes, and sleep changes can suggest perimenopause-like symptoms.",
+      "keywords": ["perimenopause", "hot flashes", "irregular periods", "night sweats", "sleep changes"],
+      "basic_care": ["Sleep hygiene", "Layered clothing", "Stress management", "Track cycles"],
+      "common_otc": ["No hormone dosing advice", "Hydration", "Lifestyle support"],
+      "seek_help_now": ["Very heavy bleeding", "Chest pain", "Severe depression", "Fainting"]
+    },
+    {
+      "name": "Menopause-like Symptoms",
+      "summary": "Hot flashes, mood changes, and vaginal dryness after menstrual cessation can suggest menopause-like symptoms.",
+      "keywords": ["menopause", "hot flashes", "night sweats", "vaginal dryness", "mood swings"],
+      "basic_care": ["Regular exercise", "Hydrate", "Sleep routine", "Discuss long-term care with clinician"],
+      "common_otc": ["Lubricating products for dryness if suitable", "Lifestyle support"],
+      "seek_help_now": ["Postmenopausal bleeding", "Chest pain", "Severe depression", "Fainting"]
+    },
+    {
+      "name": "Benign Positional Vertigo-like Symptoms",
+      "summary": "Short episodes of spinning with head movement can suggest benign positional vertigo-like symptoms.",
+      "keywords": ["bppv", "vertigo", "spinning", "head movement dizziness", "positional dizziness"],
+      "basic_care": ["Move slowly", "Sit safely during episodes", "Hydrate", "Seek vestibular assessment if frequent"],
+      "common_otc": ["Hydration", "Rest"],
+      "seek_help_now": ["New weakness", "Speech trouble", "Severe headache", "Fainting"]
+    },
+    {
+      "name": "Tension Headache",
+      "summary": "Band-like pressure around the head often due to stress or posture can suggest tension headache.",
+      "keywords": ["tension headache", "band headache", "stress headache", "neck tightness", "head pressure"],
+      "basic_care": ["Hydrate", "Reduce screen strain", "Gentle neck stretches", "Sleep adequately"],
+      "common_otc": ["Paracetamol if safe", "Relaxation support"],
+      "seek_help_now": ["Sudden worst headache", "Neurologic weakness", "Fainting", "Vision loss"]
+    },
+    {
+      "name": "Cluster Headache-like Symptoms",
+      "summary": "Severe one-sided headache around eye with tearing can suggest cluster headache-like symptoms.",
+      "keywords": ["cluster headache", "one-sided eye pain", "tearing", "severe episodic headache", "restless headache"],
+      "basic_care": ["Avoid alcohol during attacks", "Rest in a calm environment", "Track episode timing", "Seek neurologic review"],
+      "common_otc": ["No reliable OTC cure", "Hydration"],
+      "seek_help_now": ["New neurologic deficits", "Vision loss", "Severe persistent pain", "First-ever severe headache"]
+    },
+    {
+      "name": "Peripheral Neuropathy-like Symptoms",
+      "summary": "Burning, numbness, or tingling in feet or hands can suggest peripheral neuropathy-like symptoms.",
+      "keywords": ["neuropathy", "burning feet", "tingling hands", "numbness", "nerve pain"],
+      "basic_care": ["Foot care", "Avoid injuries", "Control blood sugar if diabetic", "Seek neurologic assessment"],
+      "common_otc": ["Paracetamol if safe", "Comfort footwear"],
+      "seek_help_now": ["Rapid worsening weakness", "Falls", "New bladder issues", "Severe pain with swelling"]
+    },
+    {
+      "name": "Vitamin D Deficiency-like Symptoms",
+      "summary": "Bone discomfort, fatigue, and muscle weakness can suggest vitamin D deficiency-like symptoms.",
+      "keywords": ["vitamin d deficiency", "bone pain", "muscle weakness", "fatigue", "low vitamin d"],
+      "basic_care": ["Safe sunlight exposure", "Balanced diet", "Regular activity", "Get blood test confirmation"],
+      "common_otc": ["No exact supplement dose guidance here", "Nutrition support"],
+      "seek_help_now": ["Severe weakness", "Frequent falls", "Chest pain", "Confusion"]
+    },
+    {
+      "name": "Vitamin B12 Deficiency-like Symptoms",
+      "summary": "Fatigue, tingling, and memory or concentration issues can suggest vitamin B12 deficiency-like symptoms.",
+      "keywords": ["vitamin b12", "tingling", "fatigue", "memory issues", "numbness"],
+      "basic_care": ["Balanced diet", "Seek blood test", "Track neurologic symptoms", "Follow clinical advice"],
+      "common_otc": ["No exact supplement dosing advice", "Nutrition support"],
+      "seek_help_now": ["Progressive weakness", "Walking difficulty", "Confusion", "Severe breathlessness"]
+    },
+    {
+      "name": "Obesity-related Fatigue-like Symptoms",
+      "summary": "Daytime tiredness, low stamina, and body aches can occur with obesity-related strain.",
+      "keywords": ["obesity", "weight gain", "fatigue", "low stamina", "body aches"],
+      "basic_care": ["Gradual activity increase", "Balanced diet", "Sleep routine", "Track progress weekly"],
+      "common_otc": ["No weight-loss medicine advice here", "Lifestyle support"],
+      "seek_help_now": ["Chest pain", "Severe breathlessness", "Leg swelling with pain", "Fainting"]
+    },
+    {
+      "name": "Sleep Apnea-like Symptoms",
+      "summary": "Loud snoring, daytime sleepiness, and witnessed breathing pauses can suggest sleep apnea-like symptoms.",
+      "keywords": ["sleep apnea", "snoring", "breathing pauses", "daytime sleepiness", "poor sleep"],
+      "basic_care": ["Sleep on side", "Weight management", "Avoid alcohol before bed", "Seek sleep assessment"],
+      "common_otc": ["No direct OTC cure", "Sleep hygiene support"],
+      "seek_help_now": ["Severe daytime drowsiness while driving", "Chest pain", "Breathing distress", "Unexplained fainting"]
+    },
+    {
+      "name": "Mild Depression-like Symptoms",
+      "summary": "Low mood, poor motivation, and sleep or appetite changes can suggest mild depression-like symptoms.",
+      "keywords": ["depression", "low mood", "no motivation", "sadness", "sleep changes", "appetite change"],
+      "basic_care": ["Keep daily routine", "Stay connected with trusted people", "Light activity", "Seek mental health support"],
+      "common_otc": ["No psychiatric medicine advice here", "Self-care support"],
+      "seek_help_now": ["Self-harm thoughts", "Suicidal ideas", "Unable to function", "Severe agitation"]
+    },
+    {
+      "name": "Generalized Anxiety-like Symptoms",
+      "summary": "Persistent worry, tension, and restlessness can suggest generalized anxiety-like symptoms.",
+      "keywords": ["generalized anxiety", "constant worry", "restlessness", "tension", "anxious"],
+      "basic_care": ["Breathing exercises", "Limit caffeine", "Sleep routine", "Talk to mental health professional"],
+      "common_otc": ["No anxiety medicine advice here", "Relaxation support"],
+      "seek_help_now": ["Chest pain", "Self-harm thoughts", "Severe panic with fainting", "Breathing trouble"]
+    },
+    {
+      "name": "Panic Attack-like Episode",
+      "summary": "Sudden fear with fast heartbeat, sweating, and breathlessness can suggest panic attack-like episode.",
+      "keywords": ["panic attack", "sudden fear", "palpitations", "sweating", "breathless", "panic"],
+      "basic_care": ["Sit safely", "Slow breathing", "Grounding techniques", "Seek mental health follow-up"],
+      "common_otc": ["No sedative advice here", "Hydration"],
+      "seek_help_now": ["Chest pain", "Fainting", "Self-harm thoughts", "New neurologic weakness"]
+    },
+    {
+      "name": "Atopic Dermatitis-like Symptoms",
+      "summary": "Recurring itchy dry skin patches can suggest atopic dermatitis-like symptoms.",
+      "keywords": ["atopic dermatitis", "eczema flare", "itchy dry patches", "skin inflammation", "child eczema"],
+      "basic_care": ["Use fragrance-free moisturizer", "Avoid harsh soaps", "Keep nails short", "Avoid known triggers"],
+      "common_otc": ["Moisturizer", "Calamine if soothing", "Common antihistamine if safe"],
+      "seek_help_now": ["Skin infection signs", "Fever with rash", "Face swelling", "Widespread blistering"]
+    },
+    {
+      "name": "Seborrheic Dermatitis-like Symptoms",
+      "summary": "Flaky greasy patches on scalp or face can suggest seborrheic dermatitis-like symptoms.",
+      "keywords": ["seborrheic dermatitis", "dandruff", "scalp flakes", "greasy scales", "itchy scalp"],
+      "basic_care": ["Regular gentle scalp wash", "Avoid scratching", "Manage stress", "Use mild skin products"],
+      "common_otc": ["Anti-dandruff shampoo if tolerated", "Moisturizer"],
+      "seek_help_now": ["Severe redness with pain", "Spreading rash with fever", "Face swelling", "Oozing lesions"]
+    },
+    {
+      "name": "Contact Dermatitis-like Rash",
+      "summary": "Localized itchy rash after new soap, cream, or metal contact can suggest contact dermatitis-like rash.",
+      "keywords": ["contact dermatitis", "allergic skin reaction", "new soap rash", "metal rash", "localized itchy rash"],
+      "basic_care": ["Stop trigger product", "Wash area gently", "Use cool compress", "Avoid scratching"],
+      "common_otc": ["Calamine lotion", "Common antihistamine if safe", "Moisturizer"],
+      "seek_help_now": ["Face swelling", "Breathing trouble", "Severe blistering", "Rash with high fever"]
+    },
+    {
+      "name": "Scabies-like Itching",
+      "summary": "Intense night itching with small burrow-like lesions can suggest scabies-like infestation.",
+      "keywords": ["scabies", "night itching", "burrow", "itchy between fingers", "skin infestation"],
+      "basic_care": ["Avoid close skin contact until treated", "Wash clothes and bedding", "Keep nails short", "Seek clinician confirmation"],
+      "common_otc": ["No prescription-strength treatment advice here", "Symptom soothing support"],
+      "seek_help_now": ["Secondary skin infection", "Widespread severe rash", "Fever", "Infant with severe symptoms"]
+    },
+    {
+      "name": "Viral Fever (Non-specific)",
+      "summary": "General fever, body aches, and tiredness can suggest a non-specific viral fever.",
+      "keywords": ["viral fever", "fever", "body ache", "chills", "tiredness"],
+      "basic_care": ["Rest", "Hydrate well", "Monitor temperature", "Eat light food"],
+      "common_otc": ["Paracetamol if safe", "ORS or fluids"],
+      "seek_help_now": ["Very high fever", "Confusion", "Breathing trouble", "Severe weakness"]
+    },
+    {
+      "name": "Dengue-like Illness",
+      "summary": "High fever, severe body pain, headache, and weakness may suggest dengue-like illness.",
+      "keywords": ["dengue", "high fever", "body pain", "platelet", "viral"],
+      "basic_care": ["Hydrate well", "Rest", "Monitor warning signs", "Seek medical testing"],
+      "common_otc": ["Paracetamol only if safe", "Fluids", "ORS"],
+      "seek_help_now": ["Bleeding", "Persistent vomiting", "Severe abdominal pain", "Drowsiness"]
+    },
+    {
+      "name": "Typhoid-like Illness",
+      "summary": "Persistent fever, weakness, abdominal discomfort, and poor appetite may suggest typhoid-like illness.",
+      "keywords": ["typhoid", "enteric fever", "persistent fever", "abdominal discomfort", "weakness"],
+      "basic_care": ["Hydrate", "Rest", "Eat soft meals", "Seek medical testing"],
+      "common_otc": ["Paracetamol if safe", "ORS"],
+      "seek_help_now": ["Persistent high fever", "Confusion", "Severe abdominal pain", "Blood in stool"]
+    },
+    {
+      "name": "Malaria-like Illness",
+      "summary": "Fever with chills, sweating, headache, and weakness may suggest malaria-like illness.",
+      "keywords": ["malaria", "fever with chills", "sweating", "mosquito", "headache"],
+      "basic_care": ["Hydrate", "Rest", "Track fever pattern", "Get blood test promptly"],
+      "common_otc": ["Paracetamol if safe", "Fluids"],
+      "seek_help_now": ["Confusion", "Seizure", "Breathing trouble", "Persistent vomiting"]
+    },
+    {
+      "name": "Chickenpox-like Rash",
+      "summary": "Itchy fluid-filled rash with fever can suggest chickenpox-like illness.",
+      "keywords": ["chickenpox", "itchy blisters", "rash with fever", "varicella", "vesicles"],
+      "basic_care": ["Keep nails short", "Avoid scratching", "Hydrate", "Rest"],
+      "common_otc": ["Calamine lotion", "Paracetamol if safe", "Fluids"],
+      "seek_help_now": ["Breathing trouble", "Confusion", "Severe dehydration", "Rash near eyes with pain"]
+    },
+    {
+      "name": "Measles-like Rash",
+      "summary": "Fever, cough, red eyes, and spreading rash can suggest measles-like illness.",
+      "keywords": ["measles", "rash", "fever", "red eyes", "cough"],
+      "basic_care": ["Isolate as advised", "Hydrate", "Rest", "Seek medical review"],
+      "common_otc": ["Paracetamol if safe", "Fluids"],
+      "seek_help_now": ["Breathing trouble", "Persistent high fever", "Severe dehydration", "Confusion"]
+    },
+    {
+      "name": "Mumps-like Swelling",
+      "summary": "Painful swelling near jaw or cheeks with fever can suggest mumps-like illness.",
+      "keywords": ["mumps", "parotid swelling", "jaw swelling", "fever", "cheek pain"],
+      "basic_care": ["Rest", "Hydrate", "Soft foods", "Isolate as advised"],
+      "common_otc": ["Paracetamol if safe", "Fluids"],
+      "seek_help_now": ["Severe headache", "Neck stiffness", "Testicular pain", "Persistent vomiting"]
+    },
+    {
+      "name": "Hand-Foot-Mouth-like Illness",
+      "summary": "Mouth sores and rash on hands or feet with fever may suggest hand-foot-mouth-like illness.",
+      "keywords": ["hand foot mouth", "mouth sores", "hand rash", "foot rash", "viral"],
+      "basic_care": ["Hydrate", "Soft cool foods", "Rest", "Keep hygiene"],
+      "common_otc": ["Paracetamol if safe", "Fluids"],
+      "seek_help_now": ["Not drinking fluids", "Persistent high fever", "Lethargy", "Breathing trouble"]
+    },
+    {
+      "name": "Post-viral Fatigue",
+      "summary": "Ongoing tiredness after a recent infection can suggest post-viral fatigue.",
+      "keywords": ["post viral fatigue", "tired after fever", "low stamina", "weakness", "recovery"],
+      "basic_care": ["Pace activity", "Sleep well", "Hydrate", "Balanced nutrition"],
+      "common_otc": ["No specific OTC cure", "Nutrition support"],
+      "seek_help_now": ["Chest pain", "Severe breathlessness", "Fainting", "New neurologic symptoms"]
+    },
+    {
+      "name": "Chronic Cough-like Symptoms",
+      "summary": "Cough lasting several weeks can suggest chronic cough-like symptoms from multiple causes.",
+      "keywords": ["chronic cough", "long cough", "weeks of cough", "persistent cough", "night cough"],
+      "basic_care": ["Avoid smoke", "Hydrate", "Track triggers", "Get clinical review"],
+      "common_otc": ["Simple cough support", "Warm fluids"],
+      "seek_help_now": ["Coughing blood", "Breathing trouble", "Weight loss", "Chest pain"]
+    },
+    {
+      "name": "Acute Bronchospasm-like Episode",
+      "summary": "Sudden wheeze, chest tightness, and cough may suggest acute bronchospasm-like symptoms.",
+      "keywords": ["bronchospasm", "wheeze", "chest tightness", "breathless", "airway spasm"],
+      "basic_care": ["Sit upright", "Stay calm", "Avoid triggers", "Use prescribed inhaler if already advised"],
+      "common_otc": ["Hydration", "No new inhaler advice"],
+      "seek_help_now": ["Severe breathlessness", "Blue lips", "Cannot speak full sentences", "Chest pain"]
+    },
+    {
+      "name": "Oral Thrush-like Symptoms",
+      "summary": "White patches in mouth with soreness can suggest oral thrush-like symptoms.",
+      "keywords": ["oral thrush", "white patches mouth", "mouth soreness", "candida mouth", "tongue coating"],
+      "basic_care": ["Maintain oral hygiene", "Rinse mouth after inhaler use", "Stay hydrated", "Seek dental or clinical advice"],
+      "common_otc": ["No antifungal dosing advice here", "Hydration"],
+      "seek_help_now": ["Painful swallowing", "Dehydration", "Worsening spread", "Fever"]
+    },
+    {
+      "name": "Gingivitis-like Gum Inflammation",
+      "summary": "Bleeding gums, redness, and swelling can suggest gingivitis-like gum inflammation.",
+      "keywords": ["gingivitis", "bleeding gums", "gum swelling", "gum redness", "oral hygiene"],
+      "basic_care": ["Brush gently", "Floss carefully", "Use soft toothbrush", "Seek dental cleaning"],
+      "common_otc": ["Mild antiseptic mouth rinse if tolerated", "Hydration"],
+      "seek_help_now": ["Severe swelling", "Fever", "Pus discharge", "Face swelling"]
+    },
+    {
+      "name": "Periodontitis-like Gum Disease",
+      "summary": "Loose teeth, bad breath, and gum recession may suggest periodontitis-like gum disease.",
+      "keywords": ["periodontitis", "gum disease", "loose teeth", "bad breath", "gum recession"],
+      "basic_care": ["Improve oral hygiene", "Avoid tobacco", "Schedule dental evaluation", "Gentle brushing"],
+      "common_otc": ["Mild mouth rinse if tolerated", "Hydration"],
+      "seek_help_now": ["Face swelling", "Severe pain", "Fever", "Difficulty swallowing"]
+    },
+    {
+      "name": "TMJ-like Jaw Pain",
+      "summary": "Jaw pain, clicking, or stiffness can suggest TMJ-like symptoms.",
+      "keywords": ["tmj", "jaw pain", "jaw clicking", "jaw stiffness", "chewing pain"],
+      "basic_care": ["Soft diet", "Avoid hard chewing", "Jaw relaxation", "Warm compress"],
+      "common_otc": ["Paracetamol if safe", "Warm compress"],
+      "seek_help_now": ["Severe lock jaw", "Trauma", "Fever with swelling", "Inability to open mouth"]
+    },
+    {
+      "name": "Cervical Spondylosis-like Neck Pain",
+      "summary": "Chronic neck pain and stiffness with posture strain may suggest cervical spondylosis-like symptoms.",
+      "keywords": ["cervical spondylosis", "neck stiffness", "chronic neck pain", "posture", "radiating pain"],
+      "basic_care": ["Posture correction", "Neck exercises", "Frequent breaks", "Warm compress"],
+      "common_otc": ["Paracetamol if safe", "Topical pain support"],
+      "seek_help_now": ["Arm weakness", "Numbness worsening", "Severe trauma", "Loss of balance"]
+    },
+    {
+      "name": "Frozen Shoulder-like Stiffness",
+      "summary": "Progressive shoulder stiffness and limited movement can suggest frozen shoulder-like symptoms.",
+      "keywords": ["frozen shoulder", "shoulder stiffness", "limited shoulder movement", "adhesive capsulitis", "shoulder pain"],
+      "basic_care": ["Gentle range-of-motion exercises", "Warm compress", "Avoid forceful movement", "Regular physiotherapy guidance"],
+      "common_otc": ["Paracetamol if safe", "Topical support"],
+      "seek_help_now": ["Severe trauma", "Sudden arm weakness", "Deformity", "Fever with joint swelling"]
+    },
+    {
+      "name": "Piriformis-like Buttock Pain",
+      "summary": "Deep buttock pain radiating to leg can suggest piriformis-like irritation.",
+      "keywords": ["piriformis", "buttock pain", "radiating leg pain", "sciatic-type pain", "sitting pain"],
+      "basic_care": ["Avoid prolonged sitting", "Gentle stretching", "Walk regularly", "Warm compress"],
+      "common_otc": ["Paracetamol if safe", "Topical pain support"],
+      "seek_help_now": ["Progressive leg weakness", "Numbness", "Loss of bladder control", "Severe trauma"]
+    },
+    {
+      "name": "Sacroiliac Joint Pain-like Symptoms",
+      "summary": "Lower back or buttock pain worsened by standing can suggest sacroiliac joint pain-like symptoms.",
+      "keywords": ["sacroiliac", "si joint pain", "buttock pain", "lower back pain", "standing pain"],
+      "basic_care": ["Avoid heavy strain", "Gentle mobility work", "Warm compress", "Posture support"],
+      "common_otc": ["Paracetamol if safe", "Topical support"],
+      "seek_help_now": ["Leg weakness", "Numbness", "Severe trauma", "Fever with back pain"]
+    },
+    {
+      "name": "Achilles Tendinopathy-like Pain",
+      "summary": "Pain at back of ankle especially with activity can suggest Achilles tendinopathy-like pain.",
+      "keywords": ["achilles pain", "heel tendon", "ankle back pain", "tendon pain", "running pain"],
+      "basic_care": ["Reduce high-impact activity", "Ice after use", "Gentle calf stretches", "Supportive shoes"],
+      "common_otc": ["Paracetamol if safe", "Heel support"],
+      "seek_help_now": ["Sudden pop sensation", "Cannot push off foot", "Severe swelling", "Unable to walk"]
+    },
+    {
+      "name": "Patellofemoral Pain-like Knee Symptoms",
+      "summary": "Pain around kneecap during stairs or squatting can suggest patellofemoral pain-like symptoms.",
+      "keywords": ["patellofemoral", "kneecap pain", "stairs knee pain", "anterior knee pain", "runner knee"],
+      "basic_care": ["Reduce aggravating activity", "Strengthen gradually", "Use ice after exertion", "Supportive footwear"],
+      "common_otc": ["Paracetamol if safe", "Simple knee support"],
+      "seek_help_now": ["Severe swelling", "Locking knee", "Cannot bear weight", "Recent trauma"]
+    },
+    {
+      "name": "Restless Legs-like Symptoms",
+      "summary": "Uncomfortable urge to move legs at rest, especially at night, can suggest restless legs-like symptoms.",
+      "keywords": ["restless legs", "urge to move legs", "night leg discomfort", "sleep leg movement", "leg restlessness"],
+      "basic_care": ["Keep regular sleep schedule", "Limit caffeine", "Gentle evening stretch", "Check iron status with clinician"],
+      "common_otc": ["No specific OTC cure", "Sleep hygiene support"],
+      "seek_help_now": ["Severe sleep loss", "Daytime safety issues", "New neurologic weakness", "Severe pain"]
+    },
+    {
+      "name": "Nocturnal Leg Cramps",
+      "summary": "Sudden painful calf or foot cramps at night can suggest nocturnal leg cramps.",
+      "keywords": ["night leg cramps", "calf cramps", "foot cramps", "muscle spasm at night", "leg spasm"],
+      "basic_care": ["Hydrate", "Gentle calf stretching", "Warm shower before sleep", "Review activity load"],
+      "common_otc": ["Hydration support", "Paracetamol if residual pain and safe"],
+      "seek_help_now": ["Persistent swelling", "Red hot calf", "Severe weakness", "Chest pain or breathlessness"]
+    },
+    {
+      "name": "Varicose Vein-like Discomfort",
+      "summary": "Visible leg veins with aching or heaviness can suggest varicose vein-like discomfort.",
+      "keywords": ["varicose veins", "leg heaviness", "visible veins", "aching legs", "standing discomfort"],
+      "basic_care": ["Elevate legs", "Avoid prolonged standing", "Walk regularly", "Use compression if advised"],
+      "common_otc": ["No direct OTC cure", "Supportive stockings if advised"],
+      "seek_help_now": ["Sudden one-leg swelling", "Severe pain", "Skin ulcer", "Breathing trouble"]
+    },
+    {
+      "name": "Mild Dependent Leg Swelling",
+      "summary": "Mild swelling after long standing or sitting can suggest dependent leg swelling.",
+      "keywords": ["leg swelling", "ankle swelling", "dependent edema", "standing swelling", "puffy feet"],
+      "basic_care": ["Elevate legs", "Reduce excess salt", "Move regularly", "Hydrate"],
+      "common_otc": ["No diuretic advice here", "Supportive compression if suitable"],
+      "seek_help_now": ["One-sided painful swelling", "Breathlessness", "Chest pain", "Rapid worsening edema"]
+    },
+    {
+      "name": "Cellulitis-like Skin Infection",
+      "summary": "Painful warm spreading redness of skin can suggest cellulitis-like infection.",
+      "keywords": ["cellulitis", "warm red skin", "spreading redness", "skin infection", "painful swelling"],
+      "basic_care": ["Keep area clean", "Rest affected limb", "Mark spread edge for monitoring", "Seek clinical review"],
+      "common_otc": ["Paracetamol if safe", "Hydration"],
+      "seek_help_now": ["Fever", "Rapid spread", "Severe pain", "Confusion"]
+    },
+    {
+      "name": "Urticaria (Hives)-like Rash",
+      "summary": "Raised itchy welts that move around can suggest urticaria or hives-like rash.",
+      "keywords": ["hives", "urticaria", "itchy welts", "allergic rash", "raised rash"],
+      "basic_care": ["Avoid trigger if known", "Cool compress", "Do not scratch", "Observe breathing symptoms"],
+      "common_otc": ["Common antihistamine if safe", "Calamine"],
+      "seek_help_now": ["Breathing trouble", "Face or tongue swelling", "Dizziness", "Persistent severe reaction"]
+    },
+    {
+      "name": "Psoriasis-like Plaques",
+      "summary": "Thick scaly patches on skin can suggest psoriasis-like plaques.",
+      "keywords": ["psoriasis", "scaly plaques", "thick skin patches", "chronic rash", "elbow knee plaques"],
+      "basic_care": ["Moisturize regularly", "Avoid skin trauma", "Manage stress", "Use gentle skin products"],
+      "common_otc": ["Moisturizer", "Tar or gentle scale-care shampoo if tolerated"],
+      "seek_help_now": ["Widespread severe flare", "Joint swelling and pain", "Skin infection signs", "Fever"]
+    },
+    {
+      "name": "Scalp Dandruff-like Symptoms",
+      "summary": "Flaking scalp with mild itch can suggest dandruff-like symptoms.",
+      "keywords": ["dandruff", "scalp flakes", "itchy scalp", "dry scalp", "seborrhea"],
+      "basic_care": ["Regular scalp wash", "Avoid harsh products", "Do not scratch", "Manage stress"],
+      "common_otc": ["Anti-dandruff shampoo if tolerated", "Moisturizer for dry areas"],
+      "seek_help_now": ["Severe redness", "Painful scalp swelling", "Fever", "Hair loss with inflamed patches"]
+    },
+    {
+      "name": "Athlete's Foot-like Infection",
+      "summary": "Itchy peeling skin between toes can suggest athlete's foot-like fungal infection.",
+      "keywords": ["athlete foot", "tinea pedis", "toe web itching", "foot fungus", "peeling toes"],
+      "basic_care": ["Keep feet dry", "Change socks regularly", "Use breathable footwear", "Avoid sharing towels"],
+      "common_otc": ["Simple antifungal cream if already tolerated", "Foot powder"],
+      "seek_help_now": ["Spreading painful redness", "Pus", "Fever", "Diabetes with foot infection"]
+    },
+    {
+      "name": "Nail Fungus-like Changes",
+      "summary": "Thick, brittle, discolored nails can suggest nail fungus-like changes.",
+      "keywords": ["nail fungus", "onychomycosis", "thick nail", "yellow nail", "brittle nail"],
+      "basic_care": ["Keep nails dry", "Trim nails safely", "Avoid tight shoes", "Maintain foot hygiene"],
+      "common_otc": ["Simple topical nail care products if tolerated"],
+      "seek_help_now": ["Painful swollen toe", "Pus", "Spreading redness", "Diabetes with nail infection"]
+    },
+    {
+      "name": "Boil-like Skin Abscess",
+      "summary": "A painful swollen skin lump with pus can suggest boil-like skin abscess.",
+      "keywords": ["boil", "skin abscess", "painful lump", "pus", "furuncle"],
+      "basic_care": ["Keep area clean", "Warm compress", "Do not squeeze", "Seek clinical review if large"],
+      "common_otc": ["Paracetamol if safe", "Clean dressing"],
+      "seek_help_now": ["Fever", "Rapid spread", "Face area boil", "Severe pain"]
+    },
+    {
+      "name": "Folliculitis-like Rash",
+      "summary": "Small red or pus bumps around hair follicles can suggest folliculitis-like rash.",
+      "keywords": ["folliculitis", "hair follicle bumps", "pustules", "shaving rash", "skin bumps"],
+      "basic_care": ["Keep skin clean", "Avoid friction", "Use clean razors", "Wear loose clothing"],
+      "common_otc": ["Mild antiseptic wash if tolerated", "Hydration"],
+      "seek_help_now": ["Fever", "Spreading painful redness", "Large abscess", "Severe pain"]
+    },
+    {
+      "name": "Impetigo-like Skin Lesions",
+      "summary": "Honey-colored crusting skin sores can suggest impetigo-like lesions.",
+      "keywords": ["impetigo", "crusting sores", "honey crust", "contagious skin infection", "skin lesions"],
+      "basic_care": ["Keep lesions clean", "Avoid scratching", "Do not share towels", "Maintain hand hygiene"],
+      "common_otc": ["No antibiotic advice here", "Gentle cleansing support"],
+      "seek_help_now": ["Fever", "Spreading lesions", "Painful swelling", "Eye-area involvement"]
+    },
+    {
+      "name": "Cold Sore-like Lesion",
+      "summary": "Small painful lip blisters can suggest cold sore-like lesions.",
+      "keywords": ["cold sore", "lip blister", "herpes labialis", "tingling lip", "mouth blister"],
+      "basic_care": ["Avoid touching lesion", "Do not share utensils", "Keep area clean", "Hydrate"],
+      "common_otc": ["Simple lip care", "Pain support if safe"],
+      "seek_help_now": ["Eye involvement", "High fever", "Severe dehydration", "Widespread lesions"]
+    },
+    {
+      "name": "Dry Mouth (Xerostomia)-like Symptoms",
+      "summary": "Persistent dry mouth can suggest xerostomia-like symptoms from dehydration or other causes.",
+      "keywords": ["dry mouth", "xerostomia", "sticky mouth", "thirst", "mouth dryness"],
+      "basic_care": ["Sip water often", "Avoid excess caffeine", "Use sugar-free lozenges", "Maintain oral hygiene"],
+      "common_otc": ["Saliva substitute products if available", "Hydration"],
+      "seek_help_now": ["Difficulty swallowing", "Severe dehydration", "Confusion", "Chest pain"]
+    },
+    {
+      "name": "Persistent Hiccups-like Symptoms",
+      "summary": "Hiccups lasting longer than usual can suggest persistent hiccups-like symptoms.",
+      "keywords": ["persistent hiccups", "continuous hiccups", "hiccup for days", "diaphragm spasm", "hiccups"],
+      "basic_care": ["Sip cold water", "Eat small meals", "Avoid carbonated drinks", "Track triggers"],
+      "common_otc": ["No specific OTC cure", "Hydration"],
+      "seek_help_now": ["Hiccups for more than 48 hours", "Vomiting", "Chest pain", "Neurologic symptoms"]
+    },
+    {
+      "name": "Traveler's Diarrhea-like Illness",
+      "summary": "Loose stools and cramps during or after travel can suggest traveler's diarrhea-like illness.",
+      "keywords": ["traveler diarrhea", "travel loose motion", "food water infection", "stomach upset travel", "diarrhea"],
+      "basic_care": ["Take ORS", "Eat bland food", "Rest", "Avoid unsafe food and water"],
+      "common_otc": ["ORS", "Simple probiotics if tolerated"],
+      "seek_help_now": ["Blood in stool", "High fever", "Severe dehydration", "Persistent vomiting"]
+    },
+    {
+      "name": "Intestinal Worm-like Symptoms",
+      "summary": "Abdominal discomfort, itching around anus, and appetite changes can suggest intestinal worm-like symptoms.",
+      "keywords": ["worms", "intestinal worms", "anal itching", "deworming", "stomach discomfort"],
+      "basic_care": ["Maintain hand hygiene", "Wash bedding and clothes", "Trim nails", "Seek deworming advice from clinician"],
+      "common_otc": ["No exact deworming dose advice here", "Hydration"],
+      "seek_help_now": ["Severe abdominal pain", "Vomiting", "Weight loss", "Anemia symptoms"]
+    },
+    {
+      "name": "Anal Fissure-like Pain",
+      "summary": "Sharp pain and small bleeding during bowel movements can suggest anal fissure-like pain.",
+      "keywords": ["anal fissure", "painful stool", "bleeding while stool", "anal pain", "constipation pain"],
+      "basic_care": ["Increase fiber", "Hydrate", "Warm sitz baths", "Avoid straining"],
+      "common_otc": ["Fiber supplements if tolerated", "Stool softening support if safe"],
+      "seek_help_now": ["Heavy bleeding", "Severe persistent pain", "Fever", "Pus discharge"]
+    },
+    {
+      "name": "GERD Night Reflux-like Symptoms",
+      "summary": "Nighttime heartburn, sour taste, and cough can suggest GERD night reflux-like symptoms.",
+      "keywords": ["night reflux", "gerd", "heartburn at night", "sour taste", "night cough"],
+      "basic_care": ["Avoid late heavy meals", "Raise head end of bed", "Limit trigger foods", "Weight management"],
+      "common_otc": ["Simple antacid if safe", "Light meals"],
+      "seek_help_now": ["Severe chest pain", "Vomiting blood", "Black stool", "Trouble swallowing"]
+    },
+    {
+      "name": "Fatty Liver-like Symptoms",
+      "summary": "Mild right upper abdominal discomfort and fatigue can suggest fatty liver-like symptoms.",
+      "keywords": ["fatty liver", "liver fat", "right upper abdomen discomfort", "metabolic", "fatigue"],
+      "basic_care": ["Reduce processed foods", "Exercise regularly", "Avoid alcohol", "Track weight"],
+      "common_otc": ["No liver medicine advice here", "Lifestyle support"],
+      "seek_help_now": ["Jaundice", "Severe abdominal pain", "Persistent vomiting", "Confusion"]
+    },
+    {
+      "name": "Hepatitis-like Symptoms",
+      "summary": "Fatigue, nausea, dark urine, and yellowing can suggest hepatitis-like symptoms.",
+      "keywords": ["hepatitis", "liver infection", "dark urine", "jaundice", "fatigue"],
+      "basic_care": ["Hydrate", "Avoid alcohol", "Eat light meals", "Seek urgent medical testing"],
+      "common_otc": ["No liver medicine advice here", "Hydration"],
+      "seek_help_now": ["Jaundice worsening", "Confusion", "Bleeding", "Severe abdominal pain"]
+    },
+    {
+      "name": "Jaundice-like Presentation",
+      "summary": "Yellow eyes or skin with dark urine may suggest jaundice-like presentation.",
+      "keywords": ["jaundice", "yellow eyes", "yellow skin", "dark urine", "liver"],
+      "basic_care": ["Seek medical evaluation quickly", "Hydrate", "Avoid alcohol", "Track symptoms"],
+      "common_otc": ["No direct OTC cure"],
+      "seek_help_now": ["Confusion", "Bleeding", "Severe weakness", "Persistent vomiting"]
+    },
+    {
+      "name": "Gallstone-like Indigestion",
+      "summary": "Upper abdominal discomfort after fatty meals with nausea can suggest gallstone-like indigestion.",
+      "keywords": ["gallstone", "fatty food pain", "upper abdomen pain", "biliary discomfort", "nausea"],
+      "basic_care": ["Avoid fatty meals", "Eat smaller portions", "Hydrate", "Seek imaging review"],
+      "common_otc": ["Paracetamol if safe", "Light diet"],
+      "seek_help_now": ["Fever", "Persistent severe pain", "Jaundice", "Repeated vomiting"]
+    },
+    {
+      "name": "Pancreatitis-like Abdominal Pain",
+      "summary": "Severe upper abdominal pain radiating to back with vomiting can suggest pancreatitis-like pain.",
+      "keywords": ["pancreatitis", "severe upper abdomen pain", "pain to back", "vomiting", "pancreas"],
+      "basic_care": ["Do not self-medicate heavily", "Hydrate if able", "Seek urgent hospital assessment", "Avoid alcohol"],
+      "common_otc": ["No specific OTC treatment"],
+      "seek_help_now": ["Severe persistent pain", "Repeated vomiting", "Fever", "Breathing trouble"]
+    },
+    {
+      "name": "Prostatitis-like Urinary Symptoms",
+      "summary": "Pelvic discomfort, urinary urgency, and burning can suggest prostatitis-like symptoms.",
+      "keywords": ["prostatitis", "pelvic pain", "burning urine", "urinary urgency", "male urinary pain"],
+      "basic_care": ["Hydrate", "Avoid long sitting", "Warm sitz bath", "Seek clinician review"],
+      "common_otc": ["Paracetamol if safe", "Hydration"],
+      "seek_help_now": ["High fever", "Unable to urinate", "Severe pain", "Blood in urine"]
+    },
+    {
+      "name": "BPH-like Urinary Symptoms",
+      "summary": "Slow urine flow, nighttime urination, and incomplete emptying in older men may suggest BPH-like symptoms.",
+      "keywords": ["bph", "prostate enlargement", "slow urine flow", "night urination", "incomplete emptying"],
+      "basic_care": ["Limit late fluids", "Reduce caffeine", "Timed urination", "Get prostate evaluation"],
+      "common_otc": ["No prostate medicine self-start advice"],
+      "seek_help_now": ["Unable to pass urine", "Blood in urine", "Fever", "Severe lower abdominal pain"]
+    },
+    {
+      "name": "Erectile Dysfunction-like Concerns",
+      "summary": "Difficulty maintaining erection can suggest erectile dysfunction-like concerns.",
+      "keywords": ["erectile dysfunction", "ed", "sexual performance", "erection problem", "male sexual health"],
+      "basic_care": ["Manage stress", "Improve sleep", "Exercise regularly", "Discuss with clinician"],
+      "common_otc": ["No prescription sexual medicine advice here"],
+      "seek_help_now": ["Chest pain with exertion", "Severe depression", "Penile pain", "Sudden genital injury"]
+    },
+    {
+      "name": "PCOS-like Symptoms",
+      "summary": "Irregular periods, acne, and weight changes may suggest PCOS-like symptoms.",
+      "keywords": ["pcos", "irregular periods", "acne", "weight gain", "hormonal imbalance"],
+      "basic_care": ["Track menstrual cycles", "Balanced diet", "Regular exercise", "Seek gynecology review"],
+      "common_otc": ["No hormone medicine advice here", "Lifestyle support"],
+      "seek_help_now": ["Severe pelvic pain", "Heavy prolonged bleeding", "Fainting", "Pregnancy concern with pain"]
+    },
+    {
+      "name": "Endometriosis-like Pelvic Pain",
+      "summary": "Chronic painful periods and pelvic pain can suggest endometriosis-like symptoms.",
+      "keywords": ["endometriosis", "painful periods", "chronic pelvic pain", "period pain", "painful intercourse"],
+      "basic_care": ["Track pain cycle", "Use warm compress", "Gentle exercise", "Seek gynecology assessment"],
+      "common_otc": ["Paracetamol if safe", "Heat therapy"],
+      "seek_help_now": ["Severe one-sided pain", "Fainting", "Heavy bleeding", "Pregnancy with pain"]
+    },
+    {
+      "name": "Ovarian Cyst-like Symptoms",
+      "summary": "Pelvic discomfort, bloating, or irregular cycles may suggest ovarian cyst-like symptoms.",
+      "keywords": ["ovarian cyst", "pelvic discomfort", "bloating", "irregular cycle", "lower abdomen pain"],
+      "basic_care": ["Monitor symptoms", "Track cycle", "Hydrate", "Seek ultrasound evaluation"],
+      "common_otc": ["Paracetamol if safe"],
+      "seek_help_now": ["Sudden severe one-sided pain", "Fainting", "Vomiting", "Fever"]
+    },
+    {
+      "name": "Uterine Fibroid-like Symptoms",
+      "summary": "Heavy periods and pelvic pressure can suggest uterine fibroid-like symptoms.",
+      "keywords": ["uterine fibroid", "heavy period", "pelvic pressure", "frequent urination", "menstrual clots"],
+      "basic_care": ["Track bleeding", "Hydrate", "Iron-rich diet", "Seek gynecology review"],
+      "common_otc": ["Paracetamol if safe", "Nutrition support"],
+      "seek_help_now": ["Severe bleeding", "Fainting", "Severe pelvic pain", "Breathlessness"]
+    },
+    {
+      "name": "Menorrhagia-like Heavy Periods",
+      "summary": "Unusually heavy menstrual bleeding can suggest menorrhagia-like symptoms.",
+      "keywords": ["menorrhagia", "heavy periods", "period clots", "excess bleeding", "frequent pad change"],
+      "basic_care": ["Track cycle and flow", "Hydrate", "Rest", "Seek gynecology review"],
+      "common_otc": ["Paracetamol if pain and safe", "Iron-rich food support"],
+      "seek_help_now": ["Soaking pads very rapidly", "Fainting", "Severe weakness", "Pregnancy possibility"]
+    },
+    {
+      "name": "Dysmenorrhea-like Painful Periods",
+      "summary": "Cramping lower abdominal pain during periods can suggest dysmenorrhea-like symptoms.",
+      "keywords": ["dysmenorrhea", "painful periods", "period cramps", "menstrual pain", "lower abdomen cramps"],
+      "basic_care": ["Warm compress", "Hydrate", "Light stretching", "Rest"],
+      "common_otc": ["Paracetamol if safe", "Heat therapy"],
+      "seek_help_now": ["Very severe pain", "Fainting", "Heavy bleeding", "One-sided persistent pain"]
+    },
+    {
+      "name": "Pelvic Inflammatory Disease-like Symptoms",
+      "summary": "Lower abdominal pain, fever, and abnormal discharge can suggest pelvic inflammatory disease-like symptoms.",
+      "keywords": ["pelvic inflammatory disease", "pid", "pelvic pain", "fever", "abnormal discharge"],
+      "basic_care": ["Seek urgent gynecology review", "Hydrate", "Avoid delaying care", "Track fever"],
+      "common_otc": ["Paracetamol if safe", "Hydration"],
+      "seek_help_now": ["High fever", "Severe pelvic pain", "Vomiting", "Fainting"]
+    },
+    {
+      "name": "Allergic Conjunctivitis-like Symptoms",
+      "summary": "Itchy red watery eyes with allergy triggers can suggest allergic conjunctivitis-like symptoms.",
+      "keywords": ["allergic conjunctivitis", "itchy eyes", "watery eyes", "eye allergy", "red itchy eyes"],
+      "basic_care": ["Avoid allergens", "Do not rub eyes", "Cool compress", "Keep hands clean"],
+      "common_otc": ["Lubricating drops", "Common antihistamine if safe"],
+      "seek_help_now": ["Severe eye pain", "Vision changes", "Light sensitivity with pain", "Eye injury"]
+    },
+    {
+      "name": "Refractive Error-like Eye Strain",
+      "summary": "Frequent headaches and blurred vision during reading or screen use can suggest refractive error-like strain.",
+      "keywords": ["refractive error", "eye power", "blurred vision", "eye strain", "reading headache"],
+      "basic_care": ["Take screen breaks", "Improve lighting", "Use 20-20-20 rule", "Get eye check-up"],
+      "common_otc": ["Lubricating drops if dryness", "Rest"],
+      "seek_help_now": ["Sudden vision loss", "Severe eye pain", "Double vision", "Head injury"]
+    },
+    {
+      "name": "Sinus Headache-like Symptoms",
+      "summary": "Facial pressure with headache and nasal congestion can suggest sinus headache-like symptoms.",
+      "keywords": ["sinus headache", "facial pressure", "blocked nose headache", "sinus pain", "forehead pain"],
+      "basic_care": ["Steam inhalation", "Hydrate", "Rest", "Saline rinse"],
+      "common_otc": ["Paracetamol if safe", "Saline spray"],
+      "seek_help_now": ["High fever", "Eye swelling", "Confusion", "Severe worsening pain"]
+    },
+    {
+      "name": "Heat Cramps-like Symptoms",
+      "summary": "Painful muscle cramps after heavy sweating can suggest heat cramps-like symptoms.",
+      "keywords": ["heat cramps", "muscle cramps in heat", "sweating cramps", "electrolyte loss", "hot weather cramps"],
+      "basic_care": ["Move to cool place", "Drink ORS", "Rest muscles", "Stretch gently"],
+      "common_otc": ["ORS", "Hydration"],
+      "seek_help_now": ["Confusion", "Fainting", "Persistent vomiting", "Very high body temperature"]
+    },
+    {
+      "name": "Heat Rash (Prickly Heat)-like Symptoms",
+      "summary": "Small itchy red bumps in hot weather can suggest heat rash-like symptoms.",
+      "keywords": ["heat rash", "prickly heat", "sweat rash", "hot weather rash", "itchy red bumps"],
+      "basic_care": ["Keep skin cool", "Wear loose cotton clothes", "Avoid heavy sweating", "Take cool showers"],
+      "common_otc": ["Calamine lotion", "Mild soothing moisturizer"],
+      "seek_help_now": ["Fever", "Spreading painful rash", "Pus", "Dehydration"]
+    },
+    {
+      "name": "Mild Hypothermia-like Symptoms",
+      "summary": "Shivering, cold skin, and confusion after cold exposure can suggest mild hypothermia-like symptoms.",
+      "keywords": ["hypothermia", "cold exposure", "shivering", "cold skin", "low body temperature"],
+      "basic_care": ["Move to warm shelter", "Remove wet clothes", "Warm gradually", "Use warm fluids if alert"],
+      "common_otc": ["No OTC cure", "Warm fluids"],
+      "seek_help_now": ["Confusion", "Drowsiness", "Slow breathing", "Loss of consciousness"]
+    },
+    {
+      "name": "Jet Lag-like Sleep Disturbance",
+      "summary": "Sleep disruption and fatigue after crossing time zones can suggest jet lag-like symptoms.",
+      "keywords": ["jet lag", "time zone sleep", "travel fatigue", "sleep disruption", "day-night confusion"],
+      "basic_care": ["Adjust sleep schedule gradually", "Get morning daylight", "Hydrate", "Limit late caffeine"],
+      "common_otc": ["No sedative advice here", "Sleep hygiene support"],
+      "seek_help_now": ["Severe confusion", "Chest pain", "Persistent severe insomnia", "Safety risk from drowsiness"]
+    },
+    {
+      "name": "Chronic Stress-related Fatigue",
+      "summary": "Long-term stress with poor sleep and low energy can suggest stress-related fatigue.",
+      "keywords": ["stress fatigue", "burnout", "chronic stress", "low energy", "mental exhaustion"],
+      "basic_care": ["Set sleep routine", "Take short daily walks", "Practice relaxation", "Reduce overload where possible"],
+      "common_otc": ["No stimulant advice", "Self-care support"],
+      "seek_help_now": ["Self-harm thoughts", "Severe anxiety", "Chest pain", "Fainting"]
+    },
+    {
+      "name": "Mild Memory/Concentration Difficulty-like Symptoms",
+      "summary": "Forgetfulness and poor focus can occur with stress, sleep loss, or nutritional issues.",
+      "keywords": ["memory issues", "poor concentration", "brain fog", "forgetfulness", "focus problems"],
+      "basic_care": ["Improve sleep", "Hydrate", "Reduce multitasking", "Review stress and nutrition"],
+      "common_otc": ["No memory medicine advice here", "Lifestyle support"],
+      "seek_help_now": ["Sudden confusion", "New speech problems", "One-sided weakness", "Head injury"]
     }
   ]
 }

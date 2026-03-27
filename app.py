@@ -7,7 +7,20 @@ from transformers import pipeline
 
 BASE_DIR = Path(__file__).resolve().parent
 TEMPLATE_PATH = BASE_DIR / "medical_templates.json"
-DEFAULT_MODEL = "sshleifer/tiny-gpt2"
+DEFAULT_MODEL = "Qwen/Qwen2.5-3B-Instruct"
+MODEL_OPTIONS = [
+    "Qwen/Qwen2.5-3B-Instruct",
+    "google/gemma-3-4b-it",
+]
+
+# Locked generation settings chosen for stable, low-hallucination answers.
+GENERATION_SETTINGS = {
+    "temperature": 0.2,
+    "top_p": 0.75,
+    "max_new_tokens": 140,
+    "repetition_penalty": 1.15,
+}
+AUTO_RETRY_ATTEMPTS = 1
 
 EMERGENCY_KEYWORDS = {
     "chest pain",
@@ -76,12 +89,12 @@ GENERIC_SYMPTOM_WORDS = {
 
 
 @st.cache_resource(show_spinner=False)
-def load_generator():
+def load_generator(model_name):
     try:
         return pipeline(
             "text-generation",
-            model=DEFAULT_MODEL,
-            tokenizer=DEFAULT_MODEL,
+            model=model_name,
+            tokenizer=model_name,
             max_new_tokens=90,
         )
     except Exception:
@@ -258,6 +271,13 @@ def build_fallback_reply(user_text, template, score):
     )
 
 
+def extract_answer(generated_text):
+    answer = generated_text.split("Assistant:", 1)[-1].strip()
+    # Some models echo speaker tags repeatedly; keep only the first assistant block.
+    answer = answer.split("User:", 1)[0].strip()
+    return answer
+
+
 def generate_reply(user_text, generator, template, score):
     guardrail_message = check_guardrails(user_text)
     if guardrail_message:
@@ -268,51 +288,73 @@ def generate_reply(user_text, generator, template, score):
 
     context = build_context(template)
     prompt = (
-        "You are a tiny medical helper chatbot for educational use.\n"
+        "You are a medical helper chatbot for educational use.\n"
         "Use simple English.\n"
         "Do not claim to be a doctor.\n"
         "Do not prescribe dangerous medicine.\n"
         "Do not give exact dosage.\n"
         "Do not suggest antibiotics, steroids, or prescription medicines.\n"
         "If emergency symptoms appear, tell the user to seek urgent care immediately.\n"
-        "Keep the answer short and practical.\n\n"
+        "Keep the answer short and practical.\n"
+        "Stay consistent with the provided condition context.\n"
+        "If unsure, ask for details instead of inventing facts.\n\n"
         f"{context}\n\n"
         f"User symptoms: {user_text}\n"
         "Assistant:"
     )
 
     try:
-        result = generator(
-            prompt,
-            do_sample=False,
-            num_return_sequences=1,
-        )[0]["generated_text"]
-        answer = result.split("Assistant:", 1)[-1].strip()
-        if len(answer) < 20 or looks_like_gibberish(answer):
-            raise ValueError("Generated answer too small")
-        return answer
+        for attempt in range(AUTO_RETRY_ATTEMPTS + 1):
+            if attempt == 0:
+                result = generator(
+                    prompt,
+                    do_sample=False,
+                    max_new_tokens=GENERATION_SETTINGS["max_new_tokens"],
+                    repetition_penalty=GENERATION_SETTINGS["repetition_penalty"],
+                    num_return_sequences=1,
+                )[0]["generated_text"]
+            else:
+                result = generator(
+                    prompt,
+                    do_sample=True,
+                    temperature=GENERATION_SETTINGS["temperature"],
+                    top_p=GENERATION_SETTINGS["top_p"],
+                    max_new_tokens=GENERATION_SETTINGS["max_new_tokens"],
+                    repetition_penalty=GENERATION_SETTINGS["repetition_penalty"],
+                    num_return_sequences=1,
+                )[0]["generated_text"]
+
+            answer = extract_answer(result)
+            if len(answer) >= 20 and not looks_like_gibberish(answer):
+                return answer
+
+        raise ValueError("Weak output after retries")
     except Exception:
         return build_fallback_reply(user_text, template, score)
 
 
 def main():
-    st.set_page_config(page_title="Tiny Medical Chatbot", layout="centered")
+    st.set_page_config(page_title="Medical Chatbot", layout="centered")
 
-    st.title("Tiny Medical Chatbot")
+    st.title("Medical Chatbot")
     st.warning(
         "This project is only for learning and basic guidance. It is not medical advice or a diagnosis."
     )
 
     with st.sidebar:
         st.subheader("Model")
-        st.code(DEFAULT_MODEL)
-        st.caption("Chosen to stay light for weak systems.")
+        selected_model = st.selectbox(
+            "Choose a model",
+            MODEL_OPTIONS,
+            index=MODEL_OPTIONS.index(DEFAULT_MODEL),
+        )
+        st.code(selected_model)
 
         st.subheader("How It Works")
         st.write(
             "1. Reads symptom templates from `medical_templates.json`\n"
             "2. Matches user symptoms by keywords\n"
-            "3. Uses a tiny Hugging Face model to phrase the response"
+            "3. Uses a Hugging Face 3B/4B model to phrase the response"
         )
 
         st.subheader("Guardrails")
@@ -324,11 +366,11 @@ def main():
         )
 
     templates = load_templates()
-    generator = load_generator()
+    generator = load_generator(selected_model)
 
     if generator is None:
         st.info(
-            "The Hugging Face model could not load right now. The app will still work with the JSON symptom guide."
+            f"The model `{selected_model}` could not load right now. The app will still work with the JSON symptom guide."
         )
 
     if "messages" not in st.session_state:
@@ -356,7 +398,12 @@ def main():
 
     cleaned_user_text = extract_relevant_symptoms(user_text, templates)
     template, score = find_best_template(cleaned_user_text, templates)
-    reply = generate_reply(cleaned_user_text, generator, template, score)
+    reply = generate_reply(
+        cleaned_user_text,
+        generator,
+        template,
+        score,
+    )
 
     with st.chat_message("assistant"):
         if cleaned_user_text != user_text.strip():
