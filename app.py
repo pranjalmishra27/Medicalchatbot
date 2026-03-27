@@ -7,10 +7,10 @@ from transformers import pipeline
 
 BASE_DIR = Path(__file__).resolve().parent
 TEMPLATE_PATH = BASE_DIR / "medical_templates.json"
-# Stable deployment mode: use template guidance as primary response path.
-DEFAULT_MODEL = "Template-only (recommended)"
-MODEL_OPTIONS = [
-    "Template-only (recommended)",
+# Automatic model selection (best effort). If all fail, app uses template-only mode.
+MODEL_CANDIDATES = [
+    "Qwen/Qwen2.5-3B-Instruct",
+    "distilgpt2",
 ]
 
 # Locked generation settings chosen for stable, low-hallucination answers.
@@ -89,24 +89,23 @@ GENERIC_SYMPTOM_WORDS = {
 
 
 @st.cache_resource(show_spinner=True)
-def load_generator(model_name):
+def load_generator():
     """
-    Load a lightweight text generation model.
-    Returns None on Streamlit Cloud - template-only mode will be used.
+    Try models in priority order and return first successful generator.
+    Returns (generator, model_name) or (None, None).
     """
-    if model_name == "Template-only (recommended)":
-        return None
-
-    try:
-        return pipeline(
-            "text-generation",
-            model=model_name,
-            tokenizer=model_name,
-            max_new_tokens=90,
-        )
-    except Exception as e:
-        st.warning(f"⚠️ Model {model_name} could not load. Using template-only mode. (Error: {str(e)[:40]})")
-        return None
+    for model_name in MODEL_CANDIDATES:
+        try:
+            gen = pipeline(
+                "text-generation",
+                model=model_name,
+                tokenizer=model_name,
+                max_new_tokens=90,
+            )
+            return gen, model_name
+        except Exception:
+            continue
+    return None, None
 
 
 @st.cache_data(show_spinner=False)
@@ -286,6 +285,50 @@ def extract_answer(generated_text):
     return answer
 
 
+def is_off_topic_response(answer, user_text, template):
+    lower_answer = answer.lower()
+
+    blocked_phrases = [
+        "no response from your assistant",
+        "contact us at",
+        "help center",
+        "support@",
+        "within 24 hours",
+    ]
+    if any(phrase in lower_answer for phrase in blocked_phrases):
+        return True
+
+    answer_words = normalize_words(answer)
+    if len(answer_words) < 8:
+        return True
+
+    topic_words = normalize_words(user_text)
+    medical_anchor_words = {
+        "symptom",
+        "fever",
+        "cough",
+        "pain",
+        "care",
+        "rest",
+        "hydration",
+        "doctor",
+        "medical",
+        "urgent",
+    }
+    if template:
+        topic_words |= {word.lower() for word in template.get("keywords", [])}
+        topic_words |= normalize_words(template.get("name", ""))
+
+    overlap = len(answer_words & topic_words)
+    anchor_overlap = len(answer_words & medical_anchor_words)
+
+    # Reject responses that do not stay on medical/symptom topic.
+    if overlap == 0 and anchor_overlap < 2:
+        return True
+
+    return False
+
+
 def generate_reply(user_text, generator, template, score):
     guardrail_message = check_guardrails(user_text)
     if guardrail_message:
@@ -333,7 +376,11 @@ def generate_reply(user_text, generator, template, score):
                 )[0]["generated_text"]
 
             answer = extract_answer(result)
-            if len(answer) >= 20 and not looks_like_gibberish(answer):
+            if (
+                len(answer) >= 20
+                and not looks_like_gibberish(answer)
+                and not is_off_topic_response(answer, user_text, template)
+            ):
                 return answer
 
         raise ValueError("Weak output after retries")
@@ -350,19 +397,15 @@ def main():
     )
 
     with st.sidebar:
-        st.subheader("Model")
-        selected_model = st.selectbox(
-            "Choose a model",
-            MODEL_OPTIONS,
-            index=MODEL_OPTIONS.index(DEFAULT_MODEL),
-        )
-        st.code(selected_model)
+        st.subheader("Inference Mode")
+        st.write("Automatic model selection with strict safety fallback")
 
         st.subheader("How It Works")
         st.write(
             "1. Reads symptom templates from `medical_templates.json`\n"
             "2. Matches user symptoms by keywords\n"
-            "3. Returns stable template-based guidance with safety guardrails"
+            "3. Tries an automatic model and strictly validates output\n"
+            "4. Falls back to trusted template guidance when output is weak/off-topic"
         )
 
         st.subheader("Guardrails")
@@ -374,12 +417,14 @@ def main():
         )
 
     templates = load_templates()
-    generator = load_generator(selected_model)
+    generator, active_model = load_generator()
 
     if generator is None:
         st.info(
-            f"The model `{selected_model}` could not load right now. The app will still work with the JSON symptom guide."
+            "Model is unavailable right now. Running in trusted template-guidance mode."
         )
+    else:
+        st.caption(f"Auto-selected model: {active_model}")
 
     if "messages" not in st.session_state:
         st.session_state.messages = [
