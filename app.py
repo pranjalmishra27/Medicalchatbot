@@ -7,14 +7,12 @@ from transformers import pipeline
 
 BASE_DIR = Path(__file__).resolve().parent
 TEMPLATE_PATH = BASE_DIR / "medical_templates.json"
-# Lightweight model for Streamlit Cloud - optional enhancement
-# If model fails to load, app will work with template-based responses only
+# Lightweight model for Streamlit Cloud
 DEFAULT_MODEL = "gpt2"
 MODEL_OPTIONS = [
     "gpt2",
     "distilgpt2",
 ]
-MODEL_LOAD_TIMEOUT = 120  # seconds
 
 # Locked generation settings chosen for stable, low-hallucination answers.
 GENERATION_SETTINGS = {
@@ -91,36 +89,21 @@ GENERIC_SYMPTOM_WORDS = {
 }
 
 
-@st.cache_resource(show_spinner=False)
+@st.cache_resource(show_spinner=True)
 def load_generator(model_name):
     """
-    Load a text generation model. On Streamlit Cloud, lightweight models are preferred.
-    If model fails to load, returns None and the app will use template-only mode.
+    Load a lightweight text generation model.
+    Returns None on Streamlit Cloud - template-only mode will be used.
     """
     try:
-        import signal
-        
-        def timeout_handler(signum, frame):
-            raise TimeoutError(f"Model loading timed out after {MODEL_LOAD_TIMEOUT}s")
-        
-        # Set timeout for model loading
-        old_handler = signal.signal(signal.SIGALRM, timeout_handler)
-        signal.alarm(MODEL_LOAD_TIMEOUT)
-        
-        try:
-            gen = pipeline(
-                "text-generation",
-                model=model_name,
-                tokenizer=model_name,
-                max_new_tokens=90,
-            )
-            signal.alarm(0)  # Cancel alarm
-            return gen
-        finally:
-            signal.signal(signal.SIGALRM, old_handler)
-            
-    except (TimeoutError, Exception) as e:
-        st.warning(f"⚠️ Could not load model {model_name}. Using template-only mode with high-quality guidanc. Error: {str(e)[:50]}")
+        return pipeline(
+            "text-generation",
+            model=model_name,
+            tokenizer=model_name,
+            max_new_tokens=90,
+        )
+    except Exception as e:
+        st.warning(f"⚠️ Model {model_name} could not load. Using template-only mode. (Error: {str(e)[:40]})")
         return None
 
 
