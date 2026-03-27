@@ -397,15 +397,14 @@ def main():
     )
 
     with st.sidebar:
-        st.subheader("Inference Mode")
-        st.write("Automatic model selection with strict safety fallback")
+        st.subheader("Service Status")
+        st.write("Response quality and safety controls are applied automatically.")
 
         st.subheader("How It Works")
         st.write(
             "1. Reads symptom templates from `medical_templates.json`\n"
             "2. Matches user symptoms by keywords\n"
-            "3. Tries an automatic model and strictly validates output\n"
-            "4. Falls back to trusted template guidance when output is weak/off-topic"
+            "3. Generates clear, practical guidance for common symptom patterns"
         )
 
         st.subheader("Guardrails")
@@ -417,14 +416,12 @@ def main():
         )
 
     templates = load_templates()
-    generator, active_model = load_generator()
+    generator, _active_model = load_generator()
 
     if generator is None:
         st.info(
-            "Model is unavailable right now. Running in trusted template-guidance mode."
+            "The assistant is currently using standard guidance mode to ensure reliable responses."
         )
-    else:
-        st.caption(f"Auto-selected model: {active_model}")
 
     if "messages" not in st.session_state:
         st.session_state.messages = [
