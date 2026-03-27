@@ -397,9 +397,6 @@ def main():
     )
 
     with st.sidebar:
-        st.subheader("Service Status")
-        st.write("Response quality and safety controls are applied automatically.")
-
         st.subheader("How It Works")
         st.write(
             "1. Reads symptom templates from `medical_templates.json`\n"
