@@ -1,31 +1,88 @@
-# Medical Chatbot
+# 🏥 Medical Chatbot (AI + Rule-Based Hybrid)
 
-This is a lightweight Streamlit chatbot that uses:
+A lightweight **medical symptom assistant chatbot** built using **Streamlit + Transformers**, designed to provide **safe, basic health guidance** while strictly following guardrails to avoid harmful or misleading advice.
 
-- a stronger Hugging Face instruct model: `Qwen/Qwen2.5-3B-Instruct`
-- an optional 4B model choice in the sidebar: `google/gemma-3-4b-it`
-- a separate JSON symptom template file
-- basic symptom matching to make the chatbot a little more useful on weak systems
-- expanded condition coverage with many common respiratory, stomach, skin, pain, endocrine, and urinary symptom profiles
-- locked safer generation settings tuned for stable low-hallucination responses
-- automatic weak-output retry with fallback to template guidance
+---
 
-## Run
+## 🚀 Features
 
-```powershell
-pip install -r requirements.txt
+- 🧠 **Hybrid Intelligence**
+  - Template-based symptom matching
+  - AI-generated responses (fallback if model available)
+
+- ⚡ **Automatic Model Selection**
+  - Tries multiple models:
+    - `Qwen/Qwen2.5-3B-Instruct`
+    - `distilgpt2`
+  - Falls back to safe template mode if models fail
+
+- 🛡️ **Strong Safety Guardrails**
+  - Detects emergency symptoms → redirects to urgent care
+  - Blocks:
+    - Dosage advice
+    - Antibiotics/steroids suggestions
+  - Extra warnings for:
+    - Pregnancy
+    - Infants
+    - Elderly users
+
+- 🧹 **Input Cleaning System**
+  - Removes noise & irrelevant text
+  - Extracts meaningful symptom keywords
+
+- 🔍 **Smart Symptom Matching**
+  - Matches user input with predefined medical templates
+  - Uses keyword overlap scoring
+
+- 💬 **Conversational UI**
+  - Built using Streamlit chat interface
+  - Maintains session history
+
+
+## ⚙️ How It Works
+
+### 1. Input Processing
+- Cleans user input  
+- Extracts relevant symptom keywords  
+
+### 2. Guardrails Check
+- Detects:
+  - Emergency conditions  
+  - Dosage-related queries  
+  - High-risk categories  
+
+### 3. Template Matching
+- Compares symptoms with predefined conditions  
+- Selects best match using keyword scoring  
+
+### 4. Response Generation
+- If model available → AI response  
+- Else → rule-based fallback response  
+
+---
+
+## 🛡️ Safety Design
+
+This chatbot is intentionally **restricted** to avoid misuse:
+
+- ❌ No diagnosis  
+- ❌ No prescription  
+- ❌ No exact dosage  
+- ❌ No antibiotics/steroids recommendation  
+
+✔ Always:
+- Encourages consulting a real doctor  
+- Highlights emergency warning signs  
+
+---
+
+## 🧪 Installation & Setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/pranjalmishra27/Medicalchatbot.git
+cd Medicalchatbot
+2. Install Dependencies
+pip install streamlit transformers
+3. Run the App
 streamlit run app.py
-```
-
-## Files
-
-- `app.py`: Streamlit chatbot UI and model logic
-- `medical_templates.json`: symptom document/template data
-- `requirements.txt`: Python packages
-
-## Notes
-
-- This is not real medical advice.
-- You can switch between 3B and 4B model options from the sidebar.
-- Generation settings are fixed in code for safer, more stable output quality.
-- You can expand `medical_templates.json` with more symptoms and suggestions later.
