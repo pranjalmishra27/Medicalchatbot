@@ -7,11 +7,10 @@ from transformers import pipeline
 
 BASE_DIR = Path(__file__).resolve().parent
 TEMPLATE_PATH = BASE_DIR / "medical_templates.json"
-# Lightweight model for Streamlit Cloud
-DEFAULT_MODEL = "gpt2"
+# Stable deployment mode: use template guidance as primary response path.
+DEFAULT_MODEL = "Template-only (recommended)"
 MODEL_OPTIONS = [
-    "gpt2",
-    "distilgpt2",
+    "Template-only (recommended)",
 ]
 
 # Locked generation settings chosen for stable, low-hallucination answers.
@@ -95,6 +94,9 @@ def load_generator(model_name):
     Load a lightweight text generation model.
     Returns None on Streamlit Cloud - template-only mode will be used.
     """
+    if model_name == "Template-only (recommended)":
+        return None
+
     try:
         return pipeline(
             "text-generation",
@@ -360,7 +362,7 @@ def main():
         st.write(
             "1. Reads symptom templates from `medical_templates.json`\n"
             "2. Matches user symptoms by keywords\n"
-            "3. Uses a Hugging Face 3B/4B model to phrase the response"
+            "3. Returns stable template-based guidance with safety guardrails"
         )
 
         st.subheader("Guardrails")
