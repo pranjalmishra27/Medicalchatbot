@@ -14,5 +14,9 @@ dependencies = [
     "torch>=2.0.0",
 ]
 
-[project.scripts]
-app = "streamlit.cli:main"
+# For Vercel/traditional deployments
+[tool.setuptools]
+packages = []
+
+[tool.setuptools.entry-points.console_scripts]
+medical-chatbot = "streamlit.cli:main"
