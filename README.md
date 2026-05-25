@@ -1,88 +1,164 @@
-# 🏥 Medical Chatbot (AI + Rule-Based Hybrid)
+# 🩺 AI Medical Chatbot
 
-A lightweight **medical symptom assistant chatbot** built using **Streamlit + Transformers**, designed to provide **safe, basic health guidance** while strictly following guardrails to avoid harmful or misleading advice.
-
----
-
-## 🚀 Features
-
-- 🧠 **Hybrid Intelligence**
-  - Template-based symptom matching
-  - AI-generated responses (fallback if model available)
-
-- ⚡ **Automatic Model Selection**
-  - Tries multiple models:
-    - `Qwen/Qwen2.5-3B-Instruct`
-    - `distilgpt2`
-  - Falls back to safe template mode if models fail
-
-- 🛡️ **Strong Safety Guardrails**
-  - Detects emergency symptoms → redirects to urgent care
-  - Blocks:
-    - Dosage advice
-    - Antibiotics/steroids suggestions
-  - Extra warnings for:
-    - Pregnancy
-    - Infants
-    - Elderly users
-
-- 🧹 **Input Cleaning System**
-  - Removes noise & irrelevant text
-  - Extracts meaningful symptom keywords
-
-- 🔍 **Smart Symptom Matching**
-  - Matches user input with predefined medical templates
-  - Uses keyword overlap scoring
-
-- 💬 **Conversational UI**
-  - Built using Streamlit chat interface
-  - Maintains session history
-
-
-## ⚙️ How It Works
-
-### 1. Input Processing
-- Cleans user input  
-- Extracts relevant symptom keywords  
-
-### 2. Guardrails Check
-- Detects:
-  - Emergency conditions  
-  - Dosage-related queries  
-  - High-risk categories  
-
-### 3. Template Matching
-- Compares symptoms with predefined conditions  
-- Selects best match using keyword scoring  
-
-### 4. Response Generation
-- If model available → AI response  
-- Else → rule-based fallback response  
+AI-powered medical chatbot built using **Streamlit**, **LLMs**, and **Rule-Based NLP** for intelligent symptom analysis, safe medical guidance, and conversational healthcare assistance.
 
 ---
 
-## 🛡️ Safety Design
+# 🚀 Overview
 
-This chatbot is intentionally **restricted** to avoid misuse:
+This project is a hybrid AI medical assistant designed to provide conversational healthcare guidance using transformer-based language models and rule-based reasoning systems.
 
-- ❌ No diagnosis  
-- ❌ No prescription  
-- ❌ No exact dosage  
-- ❌ No antibiotics/steroids recommendation  
+The chatbot combines:
 
-✔ Always:
-- Encourages consulting a real doctor  
-- Highlights emergency warning signs  
+- Large Language Models (LLMs)
+- NLP preprocessing pipelines
+- Rule-based symptom matching
+- Safety guardrails for medical advice
+- Conversational AI interfaces
+
+The system focuses on delivering intelligent, safe, and user-friendly medical interactions while minimizing unsafe or misleading healthcare responses.
 
 ---
 
-## 🧪 Installation & Setup
+# 🎯 Key Features
 
-### 1. Clone the Repository
+- 🤖 AI-powered medical assistant
+- 💬 Conversational chatbot interface
+- 🧠 Hybrid LLM + Rule-based architecture
+- 🚨 Emergency symptom detection
+- 🔒 Safety guardrails against unsafe medical advice
+- 🩺 Symptom-based response generation
+- ⚡ Lightweight and interactive Streamlit UI
+
+---
+
+# 🧠 AI Models & Technologies
+
+| Component | Technology Used |
+|---|---|
+| Primary LLM | **Qwen2.5-3B** |
+| Lightweight Model | **DistilGPT2** |
+| Frontend | **Streamlit** |
+| NLP Pipeline | **Keyword Matching + Preprocessing** |
+| Safety System | **Emergency Detection Guardrails** |
+| Architecture | **Hybrid AI + Rule-Based System** |
+
+---
+
+# 🧠 Tech Stack
+
+## Languages & Libraries
+
+- Python
+- Streamlit
+- Pandas
+- NumPy
+
+## AI / NLP / LLMs
+
+- Qwen2.5-3B
+- DistilGPT2
+- NLP
+- Generative AI
+- Transformer Models
+- Prompt Engineering
+- Conversational AI
+
+## Tools & Frameworks
+
+- Hugging Face Transformers
+- VS Code
+- Git
+- Anaconda
+
+---
+
+# 🏗️ System Workflow
+
+```text
+User Input
+     ↓
+Text Preprocessing
+     ↓
+Symptom Analysis
+     ↓
+Rule-Based Safety Checks
+     ↓
+LLM Response Generation
+     ↓
+Medical Guidance Output
+```
+
+---
+
+# 📂 Project Structure
+
+```bash
+Medicalchatbot/
+│
+├── app/
+├── models/
+├── chatbot/
+├── preprocessing/
+├── utils/
+├── requirements.txt
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
 ```bash
 git clone https://github.com/pranjalmishra27/Medicalchatbot.git
 cd Medicalchatbot
-2. Install Dependencies
-pip install streamlit transformers
-3. Run the App
+```
+
+## Create Environment
+
+```bash
+conda create -n medicalbot python=3.10
+conda activate medicalbot
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# ▶️ Run Application
+
+```bash
 streamlit run app.py
+```
+
+---
+
+# 📸 Results
+
+The chatbot successfully performs conversational symptom analysis and generates contextual healthcare guidance while applying safety filters for emergency scenarios.
+
+### Example Capabilities
+
+- Symptom-based interaction
+- Conversational medical assistance
+- Emergency warning detection
+- Intelligent response generation
+- Safe healthcare guidance
+
+---
+
+# 🏭 Real-World Applications
+
+- Virtual Healthcare Assistants
+- AI-Based Symptom Checkers
+- Conversational Healthcare Systems
+- Medical Information Automation
+- AI-Powered Patient Support
+
+---
